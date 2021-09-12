@@ -1,0 +1,115 @@
+body{ font-family: 'georgia', serif;}
+
+#titulo {
+    width: 615px;
+    height: 50px;
+    margin: 10px 0 30px 0;
+    background-image: url(img/titulo.png);
+}
+#wrapper { 
+    width: 850px;
+    height: 620px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px #fff solid;
+    }
+#fundo7erros {
+    width: 812px;
+    height: 850px;
+    background-image:url(img/fundoerros.jpg);
+    margin: -20px 0;
+    background-repeat: no-repeat;
+}
+#jogo {
+    width: 635px;
+    height: 500px;
+	position: absolute;
+    margin: 30px 10px;
+}
+
+#miniaturas div{ width:255px; height: 213px; float:left; margin: 10px; cursor:pointer;}
+
+		
+a { margin: 0 auto; text-decoration: none; padding: 5px 7px; border-bottom: 1px #fff dashed; display:inline-block;}
+a:hover {border-bottom: 1px #fb4 dashed; background: #f1f1f1;}
+
+#caixatexto {
+    width: 245px;
+    height: 350px;
+    background-image:url(img/Jogodamemoriabalao.png);
+    position: absolute;
+    top: 10px;
+    margin: 0 610px;
+}
+#caixatexto p {
+    width: 190px;
+    height: 190px;
+    margin: 20px 22.5px 0 22.5px;
+    text-align: left;
+    color: #ac0b0b;
+    position: absolute;
+}
+#personagem {
+    width: 170px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 610px;
+    background-image: url(img/personagem.png);
+}
+
+#botoes{
+	width: 90%;
+	margin: 0 0 0 10%;
+	position: absolute;
+	bottom: 40px;
+}
+
+.jogoerros {
+width: 500px;
+height: 375px;
+margin: 0 auto 5px 50px;
+padding:0;
+position: relative;	
+float: left;
+}
+
+/* erro transparente */
+.erro{
+width: 40px;
+height: 40px;
+position: absolute;
+float: left;
+margin:-20px;
+padding:0;
+background-color: transparent;
+transition: background 1s;
+}
+
+/* erro depois de clicado */
+.ouch {
+width: 40px;
+height: 40px;
+position: absolute;
+float: left;
+margin: -20px;
+background-image: url(img/erro.png);
+transition: background 1s;
+background-repeat: no-repeat;
+}
+
+.botao{
+width: 81%;
+height: 5px;
+cursor: pointer;
+text-align: center;
+color: #fff;
+padding: 5px 0 20px 0;
+margin: 0 0 5px 9px;
+display: block;
+background-image: url(img/botao.png);
+}
+.botao:hover { background-image: url(img/botaohover.png);}
+/* opacidade */
+.opaco { opacity: 1; -webkit-transition: opacity 0.7s; -moz-transition: opacity 0.7s; -o-transition: opacity 0.7s; -ms-transition: opacity 0.7s; transition: opacity 0.7s; }
+.transparente { opacity: 0;  -webkit-transition: opacity 0.7s; -moz-transition: opacity 0.7s; -o-transition: opacity 0.7s; -ms-transition: opacity 0.7s; transition: opacity 0.7s;}

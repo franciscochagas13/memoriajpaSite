@@ -1,0 +1,222 @@
+body{ font-family: 'georgia', serif;}
+
+#titulo {
+    width: 615px;
+    height: 50px;
+    margin: 10px 0 30px 0;
+    background-image: url(titulo.png);
+   
+}
+#wrapper { 
+    width: 850px;
+    height: 620px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px #fff solid;
+    }
+#fundo {
+    width: 812px;
+    height: 495px;
+    background-image:url(fundo.png);
+    margin: -20px 0px;
+}
+#jogo {
+    width: 635px;
+    height: 500px;
+	position: absolute;
+    margin: 30px 10px;
+}
+
+a { margin: 0 auto; text-decoration: none; padding: 5px 7px; border-bottom: 1px #fff dashed; display:inline-block;}
+a:hover {border-bottom: 1px #fb4 dashed; background: #f1f1f1;}
+
+#caixatexto {
+    width: 245px;
+    height: 350px;
+    background-image:url(Jogodamemoriabalao.png);
+    position: absolute;
+    top: 10px;
+    margin: 0 610px;
+}
+#caixatexto p {
+    width: 190px;
+    height: 245px;
+    margin: 20px 22.5px 0 22.5px;
+    text-align: left;
+    color: #ac0b0b;
+    position: absolute;
+}
+
+.balao{ 
+	transform:scale(1,1); 
+	transition: transform .3s;
+	
+	-moz-transform:scale(1,1); 
+	-moz-transition: transform .3s;
+	
+	-webkit-transform:scale(1,1); 
+	-webkit-transition: -webkit-transform .3s; 
+	}
+.balaopulsando{ 
+	transform:scale(1.05,1.05); 
+	transition: transform .3s;
+	
+	-moz-transform:scale(1.05,1.05); 
+	-moz-transition: transform .3s;
+	
+	-webkit-transform:scale(1.05,1.05); 
+	-webkit-transition: -webkit-transform .3s; 
+	}
+
+#botoes{
+	width: 90%;
+	margin: 0 0 0 10%;
+	position: absolute;
+	bottom: 40px;
+}
+
+.botao{
+width: 81%;
+height: 5px;
+cursor: pointer;
+text-align: center;
+color: #fff;
+padding: 5px 0 20px 0;
+margin: 0 0 5px 9px;
+display: block;
+background-image: url(botao.png);
+}
+.botao:hover { background: url(botaohover.png);}
+
+#personagem {
+    width: 170px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 610px;
+    background-image: url(personagem.png);
+}
+.ativa { 
+width: 140px;
+height: 100px;
+margin: 0.5% 0.5%;
+background: url(img/cartas.png);
+display: inline-block;
+position:relative;
+    -moz-perspective: 900px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    
+}
+ 
+.inativa { 
+width: 22%;
+height: 20%;
+margin: 0.5% 0.5%;
+background: #ccc;
+display: inline-block;
+position: relative;
+    -moz-perspective: 900px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+/*flip*/
+
+.ativa .coberto, .ativa .imagem, .inativa .coberto, .inativa .imagem
+{  
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
+    text-align: center;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -moz-transition: -moz-transform 1s ease-in-out;
+    -o-transition: -o-transform 1s ease-in-out;
+    -ms-transition: -ms-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+}
+.ativa .imagem{
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.imagemvirada
+{    
+   padding: 0px;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   float: left;
+   text-align: center;
+   background: none;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -moz-transition: -moz-transform 1s ease-in-out;
+    -o-transition: -o-transform 1s ease-in-out;
+    -ms-transition: -ms-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+.cobertovirada{
+	padding: 0px;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   float: left;
+   text-align: center;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);    
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -moz-transition: -moz-transform 1s ease-in-out;
+    -o-transition: -o-transform 1s ease-in-out;
+    -ms-transition: -ms-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+/* transição */
+
+
+.fundo, .topo {
+	width: 140px;
+	height: 100px;
+    position:absolute;
+    left:0;
+    opacity: 1;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.topotrans {
+	width: 140px;
+	height: 100px;
+   position:absolute;
+   opacity:0;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+/* opacidade */
+.opaco { opacity: 1; -webkit-transition: opacity 1s; -moz-transition: opacity 1s; -o-transition: opacity 1s; -ms-transition: opacity 1s; transition: opacity 2s; }
+.transparente { opacity: 0;  -webkit-transition: opacity 1s; -moz-transition: opacity 1s; -o-transition: opacity 1s; -ms-transition: opacity 1s; transition: opacity 2s;}

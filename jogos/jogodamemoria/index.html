@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jogo da Memoria</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script type="text/javascript" src="memoria.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="titulo"></div>
+
+    <div id="fundo">
+			
+     <div id="jogo">
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+			<div class="ativa"></div>
+		</div>
+	
+    </div>    
+    <div id="caixatexto">
+    	<p id="texto"> Bem vindo ao jogo da memória! Escolha seu nível! </p>
+		<!-- FACIL -->		
+		<p id="textoF0" class="transparente"> Concluído em 1886, o edifício da Antiga Biblioteca Publica do Estado destinava-se, de início, a uma escola de ensino primário. Contudo, serviu aos mais diversos fins, dentre eles abrigar o Superior Tribunal de Justiça durante 22 anos. </p>
+ 		<p id="textoF1" class="transparente"> A Praça Dom Adauto, situada entre as ruas Visconde de Pelotas e Dom Pedro I, abriga um importante conjunto arquitetônico formado pelo Palácio Arquidiocesano, pela Igreja Nossa Senhora do Carmo e a Igreja de Santa Teresa de Jesus da Ordem Terceira do Carmo. </p>
+		<p id="textoF2" class="transparente"> O Prédio da Academia de Comércio foi construída  a principio para abrigar a sede do Paraíba Clube seguindo uma arquitetura de estilo  eclético projetada pelo arquiteto Hermenegildo Di Lascio. </p>
+		<p id="textoF3" class="transparente"> O Instituto Dom Ulrico foi o primeiro orfanato da cidade de João Pessoa, sendo assim nomeado em homenagem ao monge beneditino D. Ulrico Sontag. </p>
+		<p id="textoF4" class="transparente"> No governo de João Pessoa, foi erguido na Praça Venâncio Neiva, um pavilhão central destinado ao “chá das cinco”, motivo pelo qual passou a ser conhecido até hoje por “Pavilhão do Chá”. </p>
+		<p id="textoF5" class="transparente"> Localizado na Praça Pedro Américo, o Prédio dos Correios e Telégrafos apresenta características da arquitetura Neoclássica, tendo sido considerado um dos edifícios mais elegantes da capital pelas revistas da época. </p>
+		<p id="textoF6" class="transparente"> Inaugurado em 1889, o Teatro Santa Rosa constitui-se uma das quatro mais antigas casas de espetáculos do país, sendo um exemplar típico do estilo arquitetônico neoclássico praticado nas províncias do Brasil. </p>
+		<p id="textoF7" class="transparente"> O Atual Palácio da Justiça foi inaugurado em 1919, inicialmente destinado a abrigar a antiga Escola Normal, tenho sido considerado na época uma das escolas mais bem instaladas do país. </p>
+		
+		<!-- DIFICIL -->	
+		<p id="textoD0" class="transparente"> Foi o primeiro sobrado erguido na atual Rua Duque de Caxias, tendo pertencido em seus primórdios ao Brigadeiro Cirurgião Feliciano José Henriques que exerceu a função de Conselheiro da Republica. </p>
+ 		<p id="textoD1" class="transparente"> Símbolo do centro Histórico de João Pessoa, A Praça Antenor Navarro destaca-se pelos belos e bem conservados exemplares do casario civil construídos entre as décadas de 20 e 30 situados em seu entorno.
+</p> 
+		<p id="textoD2" class="transparente"> Ao contrário das demais edificações religiosas da cidade, a Igreja da Misericórdia destaca-
+se pela sua simplicidade e austeridade características próprias das igrejas maneiristas portuguesas.</p>
+		<p id="textoD3" class="transparente"> Localizada na Ladeira de São Francisco, esta Casa da Pólvora ganha importância por ser único  exemplar de prédio construído para este fim no Brasil, que não se localiza no interior de um forte.</p>
+		<p id="textoD4" class="transparente"> Único exemplar da arquitetura veneziana na cidade de João Pessoa, o Paraíba Palace Hotel recebia as personalidades mais ilustres de sua época, sendo considerado o “point” da elite Paraíba entre os anos 1930 e 1960. </p>
+		<p id="textoD5" class="transparente"> A obra deste conjunto teve início com a vinda dos beneditinos à João Pessoa, quando ainda era a Capitania Real da Paraíba, no início do séc. XVII. Foi um dos primeiros e principais locais para cultos religiosos em João Pessoa. </p>
+		<p id="textoD6" class="transparente"> Este belo conjunto arquitetônico dotado de Adro, Igreja, Convento e Cruzeiro foi erguido pelos 
+frades franciscanos que vieram à capitania da Paraíba devido à solicitação feita pelo governo Português. </p>
+		<p id="textoD7" class="transparente"> Casario que pertenceu a família Ávila Lins, faz parte juntamente com o Paraíba Palace Hotel e os Edifícios Régis e Duarte da Silveira, do entorno da Praça Vidal de Negreiros, popularmente conhecida como Ponto de Cem Réis.</p>
+				
+		<div id="botoes">
+			<div id="facil" class="botao" onclick="dificuldade(this);"> Fácil</div>
+			<div id="dificil" class="botao" onclick="dificuldade(this);"> Difícil</div>
+		</div>	 
+	 </div>
+    <div id="personagem"></div>
+</div>
+</body>
+</html>
