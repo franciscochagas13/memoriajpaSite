@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jogo dos 7 erros</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script type="text/javascript" src="seteerros.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="titulo"></div>
+
+	<div id="fundo7erros">
+		
+		<div id="jogo">
+			<div id="miniaturas">
+				<div id="jogo0" style="background: url('img/div1.png');" onclick="iniciar(this);"></div>			
+				<div id="jogo1" style="background: url('img/div2.png');" onclick="iniciar(this);"></div>			
+				<div id="jogo2" style="background: url('img/div3.png');" onclick="iniciar(this);"></div>			
+				<div id="jogo3" style="background: url('img/div4.png');" onclick="iniciar(this);"></div>			
+			</div>
+			
+			<div id="certo" class="jogoerros"></div>
+			<div id="errado" class="jogoerros">
+			
+				<div id="erro0" class="erro" onclick="ouch(this);" name="erro"></div>		
+				<div id="erro1" class="erro" onclick="ouch(this);" name="erro"></div>		
+				<div id="erro2" class="erro" onclick="ouch(this);" name="erro"></div>		
+				<div id="erro3" class="erro" onclick="ouch(this);" name="erro"></div>		
+				<div id="erro4" class="erro" onclick="ouch(this);" name="erro"></div>		
+				<div id="erro5" class="erro" onclick="ouch(this);" name="erro"></div>		
+				<div id="erro6" class="erro" onclick="ouch(this);" name="erro"></div>		
+	
+			</div>
+		</div>
+	
+    </div>
+ 
+    <div id="caixatexto">
+    	<p id="texto"> Procure e marque os erros na imagem de baixo. </p>
+		<p id="texto0" class="transparente"> No fim dos anos 1990, a praça foi revitalizada e passou a ser o símbolo do Centro Histórico de João Pessoa difundido pela mídia.</p>
+ 		<p id="texto1" class="transparente"> Em 1929, foi iniciada a construção do Parahyba Palace Hotel, que fazia parte do circuito social da cidade.</p>
+		<p id="texto2" class="transparente"> Em 1935, a praça recebeu seu atual nome, Dom Adauto, uma homenagem ao primeiro bispo e arcebispo da Paraíba.</p>
+		<p id="texto3" class="transparente"> As palmeiras imperiais existentes na praça são da época em que o Jardim Público foi construído, entre 1879 e 1881.</p>
+		<div id="botoes">
+			<div id="jogo0" class="botao" onclick="iniciar(this);">Antenor Navarro</div>
+			<div id="jogo1" class="botao" onclick="iniciar(this);">Cem Réis</div>
+			<div id="jogo2" class="botao" onclick="iniciar(this);">Dom Adauto</div>
+			<div id="jogo3" class="botao" onclick="iniciar(this);">Praça João Pessoa</div>
+		</div>
+	   </div>
+    <div id="personagem"></div>
+</div>
+</body>
+</html>

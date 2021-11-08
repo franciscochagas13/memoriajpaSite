@@ -1,0 +1,2480 @@
+
+
+<html>
+
+<head>
+
+
+
+<meta charset="UTF8" />
+
+
+
+
+
+	<script src="js/comments.js"></script>
+
+	<link rel="shortcut icon" href="memoria.ico" type="image/x-icon" />
+
+	
+
+	<script type="text/javascript">
+
+
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-28227725-1']);
+
+  _gaq.push(['_trackPageview']);
+
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+
+
+</script>
+
+
+
+
+
+	<!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'/>
+
+
+
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+
+<link rel="stylesheet" href="js/introjs.css" />
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+
+	<link rel="stylesheet" href="orbit/orbit-1.2.3.css" />
+
+
+
+	<!-- Attach necessary JS -->
+
+	<script type="text/javascript" src="orbit/jquery-1.5.1.min.js"></script>
+
+	<script type="text/javascript" src="orbit/jquery.orbit-1.2.3.min.js"></script>
+
+	<script src="js/intro.js"></script>
+
+	
+
+	<script src="js/opentip-jquery-excanvas.js"></script><!-- Change to the adapter you actually use -->
+
+	<link href="styles/opentip.css" rel="stylesheet" type="text/css" />	
+
+
+
+
+
+	<!--[if IE]>
+
+			     <style type="text/css">
+
+			         .timer { display: none !important; }
+
+			         div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+
+			    </style>
+
+			<![endif]-->
+
+
+
+
+
+	<!-- Run the plugin -->
+
+	<script type="text/javascript">
+
+			$(window).load(function() {
+
+				$('#featured').orbit();
+
+			});
+
+			
+
+			$(window).scroll(function(e) {
+
+			    var s = $(window).scrollTop(),
+
+			        opacityVal = (s / 200.0);
+
+
+
+			    $('.header-blur').css('opacity', opacityVal);
+
+			    //$('.frontao').css('left', -(opacityVal * 30) + "px");
+
+			    //$('.frontao').css('opacity', 2-opacityVal);
+
+			    $('.social').css('opacity', 7-opacityVal);
+
+			    //$('.logo').css('opacity', 3-opacityVal);
+
+			    //$('.logo').css('padding-top', ((20 + (25*opacityVal))) + "px");
+
+			    //$('.logo').css('width', (388 - (opacityVal * 50)) + "px");
+
+			});
+
+			
+
+			Opentip.styles.tipStyle = {
+
+					  // Make it look like the alert style. If you omit this, it will default to "standard"
+
+					  // Tells the tooltip to be fixed and be attached to the trigger, which is the default target
+
+					  target: true,
+
+					  extends: "alert",
+
+					  background: "#000000",
+
+					  borderColor: "#000000",
+
+					  borderColor: "#000000",
+
+					  tipJoint: "top",
+
+					  stem: true
+
+					  
+
+
+
+					};
+
+			
+
+			Opentip.defaultStyle = "tipStyle";
+
+
+
+			
+
+	</script>
+
+	<style type="text/css">
+
+@font-face {
+
+	font-family: 'ecoicon';
+
+	src:url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.eot');
+
+	src:url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.eot?#iefix') format('embedded-opentype'),
+
+		url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.woff') format('woff'),
+
+		url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.ttf') format('truetype'),
+
+		url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.svg#ecoicon') format('svg');
+
+	font-weight: normal;
+
+	font-style: normal;
+
+}
+
+
+
+body {
+
+	margin-left: 0px;
+
+	margin-top: 0px;
+
+	margin-right: 0px;
+
+	margin-bottom: 0px;
+
+}
+
+
+
+.ui-widget-content {
+
+	border: 0px solid #a8a8a8;
+
+}
+
+
+
+.social > li> a > img {
+
+width: 28px;
+
+height: 29px;
+
+display: block;
+
+}
+
+
+
+#nav {
+
+	margin: 0;
+
+	padding: 0;
+
+	list-style: none;
+
+	display: block;
+
+	height: 65px;
+
+}
+
+
+
+/* make the LI display inline */
+
+/* it's position relative so that position absolute */
+
+/* can be used in submenu */
+
+#nav li {
+
+	float: left;
+
+	display: block;
+
+	width: auto;
+
+	position: relative;
+
+	z-index: 500;
+
+	margin: 0 8px;
+
+}
+
+
+
+/* this is the parent menu */
+
+#nav li a {
+
+	/*display: block;
+
+	padding: 3px 7px 0 7px;
+
+	height: 23px;
+
+	width: auto;
+
+	text-decoration: none;
+
+	color: #fff;
+
+	font-size: 15px;
+
+	padding-bottom: 28px;
+
+	font-weight: 700;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	text-align: center;*/
+
+}
+
+
+
+.video-container {
+
+    position: relative;
+
+    padding-bottom: 56.25%;
+
+    padding-top: 30px; height: 0; overflow: hidden;
+
+}
+
+ 
+
+.video-container iframe,
+
+.video-container object,
+
+.video-container embed {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+
+#nav li a {
+
+position: relative;
+
+display: inline-block;
+
+margin: 20px 0px;
+
+outline: none;
+
+color: #c78e61;
+
+text-decoration: none;
+
+text-transform: uppercase;
+
+letter-spacing: 1px;
+
+font-weight: 400;
+
+text-shadow: 0 0 1px rgba(255,255,255,0.3);
+
+font-size: 14px;
+
+font-family: 'Open Sans Condensed', sans-serif;
+
+text-align: center;
+
+padding: 4px;
+
+font-weight: 700;
+
+text-shadow: none;
+
+-webkit-transition: color 0.3s;
+
+-moz-transition: color 0.3s;
+
+transition: color 0.3s;
+
+}
+
+
+
+#nav li a::before,
+
+#nav li a::after {
+
+	position: absolute;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 2px;
+
+	background: #fff;
+
+	content: '';
+
+	opacity: 0;
+
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+
+	transition: opacity 0.3s, transform 0.3s;
+
+	-webkit-transform: translateY(-10px);
+
+	-moz-transform: translateY(-10px);
+
+	transform: translateY(-10px);
+
+}
+
+
+
+#nav li a::before {
+
+	top: 0;
+
+	-webkit-transform: translateY(-10px);
+
+	-moz-transform: translateY(-10px);
+
+	transform: translateY(-10px);
+
+}
+
+
+
+#nav li a::after {
+
+	bottom: 0;
+
+	-webkit-transform: translateY(10px);
+
+	-moz-transform: translateY(10px);
+
+	transform: translateY(10px);
+
+}
+
+
+
+#nav li a:hover,
+
+#nav li a:focus {
+
+	color: #fff;
+
+}
+
+
+
+#nav li a:hover::before,
+
+#nav li a:focus::before,
+
+#nav li a:hover::after,
+
+#nav li a:focus::after {
+
+	opacity: 1;
+
+	-webkit-transform: translateY(0px);
+
+	-moz-transform: translateY(0px);
+
+	transform: translateY(0px);
+
+}
+
+
+
+/* submenu, it's hidden by default */
+
+#nav ul {
+
+	position: absolute;
+
+	left: 0;
+
+	display: none;
+
+	margin: 0 0 0 -1px;
+
+	padding: 0;
+
+	list-style: none;
+
+}
+
+
+
+#nav ul li {
+
+	width: 150px;
+
+	float: left;
+
+}
+
+
+
+/* config do submenu down */
+
+#nav ul a {
+
+	
+
+}
+
+
+
+#nav ul a:hover {
+
+	
+
+}
+
+
+
+/* fix ie6 small issue */
+
+/* we should always avoid using hack like this */
+
+/* should put it into separate file : ) */
+
+* html #nav ul {
+
+	margin: 0 0 0 -2px;
+
+}
+
+
+
+#header
+
+{
+
+
+
+width: 100%;
+
+height: 580px;
+
+position: relative;
+
+margin-bottom: 20px;
+
+}
+
+.header-img
+
+{
+
+background: url('img/bg_home.jpg');
+
+position: absolute;
+
+top: 0;
+
+bottom: 0;
+
+left: 0;
+
+right: 0;
+
+background-position: center;
+
+-webkit-background-size: cover;
+
+}
+
+.header-blur
+
+{
+
+background: url('img/bg_blur.jpg');
+
+position: absolute;
+
+top: 0;
+
+bottom: 0;
+
+left: 0;
+
+right: 0;
+
+background-position: center;
+
+-webkit-background-size: cover;
+
+opacity: 0;
+
+}
+
+.logo
+
+{
+
+margin: auto;
+
+padding-top: 20px;
+
+display: block;
+
+position: relative;
+
+z-index: 999;
+
+}
+
+.menubar
+
+{
+
+width: 1020px;
+
+overflow: hidden;
+
+display: block;
+
+margin-left: auto;
+
+margin-right: auto;
+
+left: 0;
+
+right: 0;
+
+position: absolute;
+
+bottom: 0;
+
+}
+
+.frontao
+
+{
+
+position: absolute;
+
+left: 0;
+
+bottom: 0;
+
+}
+
+.social
+
+{
+
+position: fixed;
+
+right: 35px;
+
+top: 0px;
+
+list-style: none;
+
+}
+
+
+
+.social > li {
+
+float: left;
+
+margin-left: 8px;
+
+}
+
+
+
+.centerCT
+
+{
+
+max-width: 70%;
+
+width: 1000px;
+
+margin: auto;
+
+}
+
+
+
+.homeBlock
+
+{
+
+	font-family: Tahoma;
+
+	font-size: 16px;
+
+	margin: 20px 0px;
+
+}
+
+.homeBlock > h1 {
+
+	font-size: 42px;
+
+	padding: 7px;
+
+	text-transform: uppercase;
+
+	color: #797979;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	width: 100%;
+
+	border-bottom: 2px solid #ccc;
+
+	border-top: 2px solid #ccc;
+
+	display: inline-block;
+
+	text-align: center;
+
+	margin-bottom: 25px;
+
+}
+
+
+
+.homeFace
+
+{
+
+	font-family: Tahoma;
+
+	font-size: 16px;
+
+	margin: 20px 0px;
+
+	background: #013881;
+
+	width: 100%;
+
+	color: white;
+
+	padding: 15px 0px;
+
+	background: url('img/bginsta.jpg');
+
+}.homeinsta
+
+{
+
+	font-family: Tahoma;
+
+	font-size: 16px;
+
+	margin: 20px 0px;
+
+	background: #013881;
+
+	width: 100%;
+
+	color: white;
+
+	padding: 15px 0px;
+
+	background: url('img/bginsta.jpg');
+
+}
+
+.homeFace h1 {
+
+	font-size: 42px;
+
+	padding: 7px;
+
+	text-transform: uppercase;
+
+	color: #fff;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	width: 100%;
+
+	border-bottom: 2px solid #fff;
+
+	border-top: 2px solid #fff;
+
+	display: inline-block;
+
+	text-align: center;
+
+	margin-bottom: 25px;
+
+}
+
+
+
+
+
+
+
+h2 {
+
+	font-size: 24px;
+
+	text-transform: uppercase;
+
+	font-weight: bold;
+
+	color: #b22626;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	border-bottom: 3px solid #ccc;
+
+	display: inline-block;
+
+}
+
+
+
+.alerta {
+
+	background: #2c2c2c;
+
+	color: white;
+
+	padding: 4px 15px;
+
+	border-radius: 5px;
+
+}
+
+
+
+#footer
+
+{
+
+	width: 100%;
+
+	background: #f0f0f0;
+
+	height: 65px;
+
+	display: block;
+
+	text-align: center;
+
+	overflow: hidden;
+
+	margin-top: 25px
+
+}
+
+
+
+#footer > .centerCT > span
+
+{
+
+padding-top: 15px;
+
+display: block;
+
+}
+
+
+
+img.butausLogo {
+
+margin-top: 10px;
+
+float: left;
+
+}
+
+
+
+.botao
+
+{
+
+background: #CF0E00;
+
+border: none;
+
+padding: 4px 14px 6px 14px;
+
+font-family: 'Open Sans Condensed', sans-serif;
+
+text-transform: uppercase;
+
+font-weight: bold;
+
+color: white;
+
+}
+
+
+
+.botao:hover
+
+{
+
+background: #BA0D01;
+
+}
+
+
+
+.botao a, .botao i
+
+{
+
+color: white;
+
+text-decoration: none;
+
+}
+
+
+
+.guide
+
+{
+
+	z-index: 999;
+
+	position: relative;
+
+	top: 170px;
+
+	width: 1000px;
+
+	margin: auto;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	text-transform: uppercase;
+
+	border-top: 2px solid #ffffff;
+
+	border-bottom: 2px solid #ffffff;
+
+	height: 100px;
+
+	padding: 15px 0px;
+
+}
+
+.guide .text
+
+{
+
+	color: white;
+
+	font-size: 20px;
+
+	width: 740px;
+
+	float: left;
+
+}
+
+.button
+
+{
+
+width: 250px;
+
+float: right;
+
+}
+
+
+
+/* Icon Styles */
+
+
+
+@font-face {
+
+	font-family: 'ecoicon';
+
+	src:url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.eot');
+
+	src:url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.eot?#iefix') format('embedded-opentype'),
+
+		url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.woff') format('woff'),
+
+		url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.ttf') format('truetype'),
+
+		url('http://tympanus.net/Development/IconHoverEffects/fonts/ecoicons/ecoicon.svg#ecoicon') format('svg');
+
+	font-weight: normal;
+
+	font-style: normal;
+
+}
+
+
+
+.hi-icon-wrap {
+
+	text-align: center;
+
+	margin: 0 auto;
+
+	padding: 0 0 3em;
+
+}
+
+
+
+.hi-icon {
+
+	display: inline-block;
+
+	font-size: 0px;
+
+	cursor: pointer;
+
+	margin: 0px 2px;
+
+	width: 40px;
+
+	height: 40px;
+
+	border-radius: 50%;
+
+	text-align: center;
+
+	position: relative;
+
+	z-index: 1;
+
+	color: #fff;
+
+}
+
+
+
+a:hover {
+
+text-decoration: none;
+
+}
+
+.hi-icon:after {
+
+	pointer-events: none;
+
+	position: absolute;
+
+	width: 100%;
+
+	height: 100%;
+
+	border-radius: 50%;
+
+	content: '';
+
+	-webkit-box-sizing: content-box; 
+
+	-moz-box-sizing: content-box; 
+
+	box-sizing: content-box;
+
+}
+
+
+
+.hi-icon:before {
+
+	font-family: 'ecoicon';
+
+	speak: none;
+
+	font-size: 24px;
+
+	line-height: 40px;
+
+	font-style: normal;
+
+	font-weight: normal;
+
+	font-variant: normal;
+
+	text-transform: none;
+
+	display: block;
+
+	-webkit-font-smoothing: antialiased;
+
+}
+
+
+
+.hi-icon-earth {
+
+	background-image: url('img/earth_n.png');
+
+}
+
+.hi-icon-earth:hover {
+
+	background-image: url('img/earth_h.png');
+
+}
+
+.hi-icon-face {
+
+	background-image: url('img/face_n.png');
+
+}
+.hi-icon-insta {
+
+background-image: url('img/insta_n.png');
+
+}
+
+.hi-icon-face:hover {
+
+	background-image: url('img/face_h.png');
+
+}
+.hi-icon-insta:hover {
+
+background-image: url('img/insta_h.png');
+
+}
+
+.hi-icon-artigo {
+
+	background-image: url('img/artigo_n.png');
+
+}
+
+.hi-icon-artigo:hover {
+
+	background-image: url('img/artigo_h.png');
+
+}
+
+.hi-icon-link {
+
+	background-image: url('img/link_n.png');
+
+}
+
+.hi-icon-link:hover {
+
+	background-image: url('img/link_h.png');
+
+}
+
+
+
+/* Effect 1 */
+
+.hi-icon-effect-1 .hi-icon {
+
+	background-color: rgba(255,255,255,0.3);
+
+	-webkit-transition: background 0.2s, color 0.2s;
+
+	-moz-transition: background 0.2s, color 0.2s;
+
+	transition: background 0.2s, color 0.2s;
+
+}
+
+
+
+.hi-icon-effect-1 .hi-icon:after {
+
+	top: -4px;
+
+	left: -4px;
+
+	padding: 4px;
+
+	box-shadow: 0 0 0 3px #fff;
+
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+
+	-webkit-transform: scale(.8);
+
+	-moz-transition: -moz-transform 0.4s, opacity 0.4s;
+
+	-moz-transform: scale(.8);
+
+	-ms-transform: scale(.8);
+
+	transition: transform 0.4s, opacity 0.4s;
+
+	transform: scale(.8);
+
+	opacity: 0;
+
+}
+
+
+
+/* Effect 1a */
+
+.hi-icon-effect-1a .hi-icon:hover {
+
+	background-color: rgba(255,255,255,1);
+
+	color: #41ab6b;
+
+}
+
+
+
+.hi-icon-effect-1a .hi-icon:hover:after {
+
+	-webkit-transform: scale(1);
+
+	-moz-transform: scale(1);
+
+	-ms-transform: scale(1);
+
+	transform: scale(1);
+
+	opacity: 1;
+
+}
+
+/* Icon Styles */
+
+
+
+/* Button Styles */
+
+.butaus:visited
+
+{
+
+color: #FFF;
+
+}
+
+.butaus {
+
+	border: none;
+
+	font-family: inherit;
+
+	font-size: 18px;
+
+	color: inherit;
+
+	background: none;
+
+	cursor: pointer;
+
+	padding: 15px 60px;
+
+	display: inline-block;
+
+	margin: 5px 30px;
+
+	text-transform: uppercase;
+
+	letter-spacing: 1px;
+
+	font-weight: 700;
+
+	outline: none;
+
+	position: relative;
+
+	-webkit-transition: all 0.3s;
+
+	-moz-transition: all 0.3s;
+
+	transition: all 0.3s;
+
+}
+
+
+
+.butaus:after {
+
+	content: '';
+
+	position: absolute;
+
+	z-index: -1;
+
+	-webkit-transition: all 0.3s;
+
+	-moz-transition: all 0.3s;
+
+	transition: all 0.3s;
+
+}
+
+
+
+.butaus-1e {
+
+	overflow: hidden;
+
+}
+
+
+
+.butaus-1e:after {
+
+	width: 100%;
+
+	height: 0;
+
+	top: 50%;
+
+	left: 50%;
+
+	background: #fff;
+
+	opacity: 0;
+
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+
+}
+
+
+
+.butaus-1e:hover,
+
+.butaus-1e:active {
+
+	color: #000;
+
+	text-decoration: none;
+
+}
+
+
+
+.butaus-1e:hover:after {
+
+	height: 260%;
+
+	opacity: 1;
+
+
+
+}
+
+
+
+.butaus-1e:active:after {
+
+	height: 400%;
+
+	opacity: 1;
+
+}
+
+
+
+.butaus-1 {
+
+border: 3px solid #fff;
+
+color: #fff;
+
+}
+
+
+
+.guidee
+
+{
+
+	z-index: 999;
+
+	position: relative;
+
+	width: 1000px;
+
+	margin: auto;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	text-transform: uppercase;
+
+	height: 100px;
+
+	padding: 15px 0px;
+
+	font-size: 18px;
+
+}
+
+.guidee a{
+
+color: white;
+
+}
+
+img.btnLogo {
+
+margin-top: 10px;
+
+float: left;
+
+}
+
+
+
+/* End of Button Styles */
+
+
+
+
+
+
+
+</style>
+
+
+
+<link rel="stylesheet" href="estilo.css" />
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div id="header">
+
+	<div class="header-img"></div>
+
+	<div class="header-blur"></div>
+
+	<!-- <img src="img/igreja-pequena.png" class="frontao"/>  -->
+
+	<ul class="social hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+
+	<li><a href="quem-somos.jsf" title="Quem Somos" data-ot="Quem Somos" data-ot-delay="1" class="hi-icon hi-icon-earth">Quem Somos</a></li>
+
+	<!-- <li><a href="links.jsf" title="Links Interessantes" data-ot="Links Interessantes" data-ot-delay="1" class="hi-icon hi-icon-link">Links Interessantes</a></li> -->
+
+	<li><a href="artigos.jsf" title="Publicações" data-ot="Publicações" data-ot-delay="1" class="hi-icon hi-icon-artigo">Publicações</a></li>
+
+	<li><a href="http://facebook.com/memoriajp" data-ot="Facebook" data-ot-delay="1" title="Facebook" target="_blank" class="hi-icon hi-icon-face">Facebook</a></li>
+	<li><a href="https://www.instagram.com/memoriajp" data-ot="Instagram" data-ot-delay="1" title="Instagram" target="_blank" class="hi-icon hi-icon-insta">Instagram</a></li>
+
+	</ul>
+
+	<a href="/"><img class="logo" src="img/logo_home.png"/></a>
+
+<!-- 	<div class="guide">
+
+		<div class="text">Inicie sua visita ao site acessando o link Formação e Evolução. Nele você pode conhecer, em breves linhas, a história da cidade de João Pessoa desde a sua fundação até o século XX.</div>
+
+		<div class="button"><a href="javascript:void(0);" onclick="javascript:introJs().start();" class="butaus butaus-1 butaus-1e">CONHECER</a></div>
+
+	</div> -->
+
+	<div class="menubar">
+
+	<ul id="nav" data-intro="Este é o menu principal do nosso site. A partir daqui, você poderá acessar os diversos trabalhos que produzimos sobre a história da nossa cidade.">
+
+					<li><a href="index.jsf">HOME</a>
+
+						<div class="clear"></div></li>
+					<li><a href="definicoes.jsf" data-step="" data-intro="a colocar.">Definições</a>
+
+							<div class="clear"></div></li>
+					<li><a href="centro-historico.jsf" data-step="2" data-intro="Aqui você pode obter mais informações sobre o nosso Centro Histórico, quais orgãos são responsáveis por sua gestão e conceitos básicos sobre patrimônio e tombamento.">CENTRO HISTÓRICO</a>
+
+						<div class="clear"></div></li>
+
+					<li><a href="formacao-e-evolucao.jsf" data-step="3" data-intro="Sugerimos que comece pelo link de Formação e Evolução, que conta a história da cidade através de uma linha do tempo.">FORMAÇÃO E EVOLUÇÃO</a>
+
+						<div class="clear"></div></li>
+
+
+					<li><a href="acervo-patrimonial.jsf" data-step="4" data-intro="Conheça a história das edificações e dos espaços públicos tombados pelo IPHAN e IPHAEP.">ACERVO PATRIMONIAL</a>
+
+						<div class="clear"></div></li>
+
+					<li><a href="vivencias.jsf" data-step="5" data-intro="Aqui convidamos nossos visitantes a conhecer a história de diferentes bens de interesse patrimonial da cidade por meio de vídeos curtas-metragens.">VIVÊNCIAS</a>
+
+						<div class="clear"></div></li>
+					<li><a href="memoria-social.jsf" data-step="6" data-intro="Nesta página registramos, através de depoimentos, as memórias, hábitos e costumes de gerações passadas.">MEMÓRIA SOCIAL</a>
+
+						<div class="clear"></div></li>
+
+					<li><a href="postais.jsf" data-step="7" data-intro="Envie postais com imagens marcantes da nossa cidade para os seus amigos.">POSTAIS</a>
+
+						<div class="clear"></div></li>
+
+					
+
+					<li><a href="galeria.jsf" >GALERIA</a>
+
+						<div class="clear"></div></li>
+
+					<li><a href="jogos.jsf" data-step="8" data-intro="Divirta-se e teste seus conhecimentos adquiridos em outros links do site com os jogos que preparamos.">JOGOS</a>
+
+						<div class="clear"></div></li>
+
+				</ul>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+<meta property="og:image" content="http://www.memoriajoaopessoa.com.br/img/facebook.png"/>
+
+<meta property="og:title" content="Formação e Evolução - Memória João Pessoa"/>
+
+<meta property="og:url" content="http://www.memoriajoaopessoa.com.br/formacao-e-evolucao.jsf"/>
+
+<meta property="og:site_name" content="Memória João Pessoa"/>
+
+<meta property="og:type" content="website"/>
+
+<title>Formação e Evolução - Memória João Pessoa</title>
+
+
+
+<style>
+
+	.titulo{
+
+		
+
+		color:white;
+
+
+
+	}
+
+
+
+</style>
+
+
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+
+</script>
+
+
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+
+<style>	
+
+	.round-border {
+
+		border: 1px solid #eee;
+
+		border: 1px solid rgba(0, 0, 0, 0.05);
+
+		-webkit-border-radius: 4px;
+
+		-moz-border-radius: 4px;
+
+		border-radius: 4px;
+
+		padding: 10px;
+
+		margin-bottom: 5px;
+
+	}
+
+	
+
+	#timeline
+
+	{
+
+		width: 100%;
+
+		background: #e61500;
+
+		height: 8px;
+
+		display: block;
+
+		margin: 50px 0;
+
+		-webkit-border-radius: 5px;
+
+		-moz-border-radius: 5px;
+
+		border-radius: 5px;
+
+	}
+
+	.linha
+
+	{
+
+		list-style: none;
+
+		position: relative;
+
+		margin-top: -5px;
+
+	}
+
+	.linha > li
+
+	{
+
+		width: 20px;
+
+		background: #e61500;
+
+		height: 20px;
+
+		-webkit-border-radius: 200px;
+
+		-moz-border-radius: 200px;
+
+		border-radius: 200px;
+
+		float: left;
+
+		margin: -5px 7%;
+
+		cursor: pointer;
+
+		
+
+		-webkit-transition: all 0.5s ease;
+
+		-moz-transition: all 0.5s ease;
+
+		-o-transition: all 0.5s ease;
+
+		transition: all 0.5s ease;
+
+	}
+
+	
+
+	@media only screen and (min-width:686px) and (max-width: 1155px)
+
+	{
+
+		.linha > li
+
+		{
+
+			margin: -5px 6%;
+
+		}
+
+	}
+
+	
+
+	@media only screen and (min-width:1px) and (max-width: 686px)
+
+	{
+
+		.linha > li
+
+		{
+
+			margin: -5px 5%;
+
+		}
+
+	}
+
+
+
+	
+
+	.selected
+
+	{
+
+		border: 4px solid #e61500;
+
+		background-color: white !important;
+
+	}
+
+	
+
+	.ano {
+
+		position: absolute;
+
+		top: 25px;
+
+		margin-left: -10px;
+
+		font-family: 'Open Sans Condensed', sans-serif;
+
+		font-size: 22px;
+
+	}
+
+	
+
+	p { text-align: justify;}
+
+	
+
+</style>
+
+
+
+
+
+
+
+<div class="centerCT">
+
+	<h1>Formação e Evolução</h1>
+
+	<p align="justify">Comece sua visita ao site acessando o link Formação e evolução. Nele você pode conhecer, em breves linhas, a história da cidade de João Pessoa desde a sua fundação até o século XX. </p>
+
+	<div class="alerta" style="width:540px;"><b>Atenção:</b> Para ver o conteúdo, clique nos marcadores na linha do tempo.</div>
+
+	<div id="timeline">
+
+		<ul class="linha">
+
+
+
+
+
+			﻿
+
+					<li id="linha1"><span class="ano">
+
+						1575
+
+					</span></li>
+
+
+
+
+
+
+
+
+
+					
+
+					<li id="linha2"><span class="ano">
+
+						1585
+
+					</span></li>
+
+
+
+
+
+
+
+
+
+					
+
+					<li id="linha3"><span class="ano">
+
+						1634
+
+					</span></li>
+
+
+
+
+
+
+
+
+
+					
+
+					<li id="linha5"><span class="ano">
+
+						1654
+
+					</span></li>
+
+
+
+
+
+
+
+
+
+					
+
+					<li id="linha6"><span class="ano">
+
+						1810
+
+					</span></li>
+
+
+
+
+
+
+
+
+
+					
+
+					<li id="linha7"><span class="ano">
+
+						1900
+
+					</span></li>
+
+
+
+
+
+
+
+
+
+					
+
+		</ul>
+
+		
+
+	</div>        	
+
+	<table width="97%" height="199" align="center" border="0" cellpadding="0" cellspacing="0">
+
+		<tr>
+
+			<td height="69">
+
+				<br/>
+
+
+
+
+
+
+
+				
+
+						<script>
+
+							$(document).ready(function(){
+
+								$("#linha1").click(function(){
+
+									var $this = $("#conteudo1");
+
+									$(".conteudo").not($this).hide();
+
+									$("#conteudo1").toggle(600);
+
+									$("#timeline > .linha > li").not(this).removeClass("selected");
+
+									$("#linha1").toggleClass("selected");
+
+								});
+
+							});
+
+						</script>
+
+						<div id="conteudo1" class="conteudo" style="display:none;"> 
+
+							<table border="0" width="100%">
+
+								<tr>       
+
+									<!-- Coluna Texto -->
+
+									<td valign="top" width="50%">
+
+										<b>A Criação da Capitania da Paraíba</b>
+
+<p align=”justify”>Até o final do século XVI, grande parte da região setentrional do litoral brasileiro, onde as capitanias hereditárias não prosperaram, continuava despovoada, sendo explorada pelos franceses, aliados às tribos indígenas locais. </p>
+
+
+
+<p align=”justify”>Para assegurar a posse efetiva daquelas terras para Portugal, uma das medidas adotadas foi a criação da Capitania da Paraíba, visando o poder régio afastar os franceses e os temidos índios Potiguaras das margens do Rio Paraíba (Figura 1). Ocorreu a primeira expedição de conquista em 1575, sob o comando do Ouvidor-Geral Fernão da Silva. As duas expedições seguintes – nos anos de 1579 e 1582 – foram comandadas por Frutuoso Barbosa, rico mercador de pau-brasil estabelecido em Pernambuco, nomeado pelo rei D. Henrique como capitão-mor da conquista da Paraíba. Frutuoso Barbosa também não obteve a conquista daquela região, e perante estes insucessos, o governador geral do Brasil, Manuel Teles Barreto, mandou que fossem para Pernambuco o ouvidor geral, Martim Leitão, e o provedor Martim Carvalho, a fim de reunir gente e recursos para outra expedição.
+
+</p> 
+
+<p align=”justify”>Resultou que em 1584, foi estabelecido na margem norte do Rio Paraíba o Forte de São Filipe, o qual foi abandonado em 1585, por não resistir mais ao cerco constante dos índios Potiguaras e dos franceses.
+
+</p>
+
+<p align=”justify”>Nesta época estavam as margens do Rio Paraíba dominadas por índios Potiguaras, assentados ao norte, e Tabajaras, situados ao sul, os quais mantinham aliança e se contrapunham à ocupação portuguesa naquela região.
+
+</p>
+
+<p align=”justify”>Tentou o ouvidor Martim Leitão estabelecer diálogo com Piragibe, chefe dos Tabajaras, na tentativa de separá-los dos Potiguaras e assim os ter por aliados. As negociações não progrediram, devido à desconfiança do indígena, já uma vez traído pelos portugueses, e o seu receio de aniquilamento por parte dos Potiguaras, em maior número, caso aqueles soubessem de uma traição.
+
+</p>
+
+<p align=”justify”>Após a queda do Forte de São Filipe, chegaram à Olinda emissários do cacique Tabajara, com o objetivo de solicitar socorro e oferecer aliança ao Ouvidor Geral, pois vinham sofrendo guerra declarada por parte dos Potiguaras.</p>
+
+
+
+<p align=”justify”>A 2 de agosto de 1585, partiram de Pernambuco, em direção à Paraíba, João Tavares, escrivão da Câmara e juiz de órfãos de Olinda, com apenas 20 homens e os emissários de Piragibe. Tinham por meta firmar um acordo de paz com os Tabajaras, criando as condições necessárias para enfrentar os Potiguaras. A 5 de agosto, João Tavares desembarcou à margem sul do Rio Sanhauá - afluente do Rio Paraíba, e escolheu o local para a construção de um forte. Esta data foi considerada como marco da fundação da  cidade, batizada de Nossa Senhora das Neves, invocação da santa do dia (Figura 2).</p> 
+
+									</td>
+
+									<!-- Coluna Imagens -->
+
+									<td valign="top" width="50%" align="center"> 
+
+										<img src="img/linhas-do-tempo/imgs-conteudo/1.jpg" />
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</div>
+
+
+
+
+
+
+
+
+
+						
+
+						<script>
+
+							$(document).ready(function(){
+
+								$("#linha2").click(function(){
+
+									var $this = $("#conteudo2");
+
+									$(".conteudo").not($this).hide();
+
+									$("#conteudo2").toggle(600);
+
+									$("#timeline > .linha > li").not(this).removeClass("selected");
+
+									$("#linha2").toggleClass("selected");
+
+								});
+
+							});
+
+						</script>
+
+						<div id="conteudo2" class="conteudo" style="display:none;"> 
+
+							<table border="0" width="100%">
+
+								<tr>       
+
+									<!-- Coluna Texto -->
+
+									<td valign="top" width="50%">
+
+										<b>A fundação da cidade e sua formação até o início do século XVII</b>
+
+<p align=”justify>Com as notícias das conquistas realizadas por João Tavares, a 15 de outubro, partiu de Pernambuco Martim Leitão, acompanhado de pedreiros, carpinteiros, entre outros oficiais, para tratar da instalação de uma povoação na Paraíba. Aprovando o sítio escolhido por João Tavares para a fundação da cidade, a 4 de Novembro teve início a construção do forte, “de cento e cincoenta palmos” que constituiu o ponto inicial daquele núcleo de povoamento.(Figura 1)</p>
+
+<p align=”justify>Apesar da constante ameaça que representava a presença dos índios Potiguara, aos poucos a cidade foi se constituindo. Assentada em uma encosta, tinha por porta de entrada o Rio Sanhauá, acesso para as embarcações que ali chegavam. No alto da colina, foi edificada uma pequena capela que era importante ponto de referência para a cidade, sendo em pouco tempo elevada à condição de igreja matriz. Assim, foi definida a sua estrutura inicial, dividida entre a cidade alta – o lugar da matriz - e a cidade baixa, à margem do rio, área também denominada de Varadouro (Figura 2). </p>
+
+<p align=”justify>Fazendo a ligação entre o Varadouro e a cidade alta, surgiu a ladeira, hoje denominada de São Francisco (A), caminho através do qual homens e mercadorias circulavam entre o porto e o núcleo administrativo e residencial situado em cima da encosta. Na cidade alta, foi aberta a Rua Nova (B), a qual tinha início à porta da igreja matriz, sendo ali edificados a Casa de Câmara e Cadeia. Estes dois logradouros constam entre os primeiros a compor a nascente malha urbana da cidade, que a partir de 1588, passou a se chamar Filipéia de Nossa Senhora das Neves, em homenagem ao rei de Espanha e Portugal.</p>
+
+<p align=”justify>Significativo para a formação do núcleo urbano e para a colonização da capitania foi a implantação das ordens religiosas na cidade. Primeiro vieram os padres da Companhia de Jesus e se instalaram, ao sul, na pequena capela de São Gonçalo, localizada próximo à aldeia dos Tabajaras (1), uma vez que trabalhavam na catequese destes índios.</p>
+
+<p align=”justify>Em 1589, chegaram à Paraíba os franciscanos, que receberam do governo da capitania um terreno nas proximidades da igreja matriz, onde edificaram sua casa.(2) Em 1600 os frades da Ordem de São Bento (3) iniciavam a construção de seu mosteiro e igreja, implantados no início da Rua Nova, em frente ao largo que antecedia a Matriz. Possivelmente, também em 1600, os carmelitas (4) edificavam seu mosteiro, situado próximo à Igreja Matriz.</p>
+
+<p align=”justify>Em 1595, a Igreja da irmandade da Santa Casa de Misericórdia, provavelmente, estava em construção, obra impulsionada por Duarte Gomes da Silveira, importante senhor de engenho. Observa-se que as casas religiosas, bem como grande parte das residências da cidade ficavam situadas no alto da colina, configurando uma imagem que demonstrava estar a Filipéia assumindo seu caráter de centro urbano, com os “edificios nobres de pedra e cal que cada dia se aumentão”, conforme registrou o sargento-mor do Brasil, Diogo de Campos Moreno, no ano de 1616. (Figura 3)</p>
+
+<p align=”justify>Na cidade alta, além da Rua Nova, surgiu a Rua Direita (C), paralela àquela, com traçado regular, e em formação por volta do ano de 1600. Havia algumas vias transversais – a Rua da Misericórdia (D), a Travessa do Carmo (E), cujo trajeto estava associado à posição assumida pelos respectivos edifícios religiosos na malha urbana.</p>
+
+<p align=”justify>Importante foi a construção da nova Casa de Câmara e Cadeia, a frente da qual foi aberto o Largo da Câmara, em 1610, obedecendo à regularidade do traçado ortogonal que caracterizava a cidade alta. Este fato denotava o progresso da cidade e criava espaços individualizados para os dois poderes instalados na Filipéia: a administração portuguesa e a Igreja Católica.</p>
+
+<p align=”justify>Vale ressaltar que embora a cidade tivesse sua origem associada ao forte edificado em 1585, a defesa da Paraíba não estava diretamente vinculada à Filipéia, uma vez que a principal estrutura defensiva – o Forte do Cabedelo - estava situado na barra do Rio Paraíba. (Figura 4)</p>
+
+ 
+
+									</td>
+
+									<!-- Coluna Imagens -->
+
+									<td valign="top" width="50%" align="center"> 
+
+										<img src="img/linhas-do-tempo/imgs-conteudo/2.jpg" />
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</div>
+
+
+
+
+
+
+
+
+
+						
+
+						<script>
+
+							$(document).ready(function(){
+
+								$("#linha3").click(function(){
+
+									var $this = $("#conteudo3");
+
+									$(".conteudo").not($this).hide();
+
+									$("#conteudo3").toggle(600);
+
+									$("#timeline > .linha > li").not(this).removeClass("selected");
+
+									$("#linha3").toggleClass("selected");
+
+								});
+
+							});
+
+						</script>
+
+						<div id="conteudo3" class="conteudo" style="display:none;"> 
+
+							<table border="0" width="100%">
+
+								<tr>       
+
+									<!-- Coluna Texto -->
+
+									<td valign="top" width="50%">
+
+										<b> O período da invasão holandesa e a cidade frederica </b>
+
+<p align=”justify”>Quando da invasão holandesa ao nordeste do Brasil, a Paraíba era a terceira capitania em ordem de grandeza e importância econômica na colônia, sendo precedida pela Bahia e Pernambuco. Era esta riqueza e prosperidade que atraía os invasores.</p>
+
+<p align=”justify”>Estes, após fracassadas investidas, ganharam por fim o domínio sobre a Paraíba, em 1634, apesar do reforço do esquema defensivo da capitania com a construção dos fortes de Santo Antônio e da Restinga, e das baterias que resguardavam o entorno do Forte de Cabedelo. (Figura 1 e 2)</p>
+
+<p align=”justify”>Nesta época a Paraíba contava com 18 engenhos produtivos, dos quais oito foram abandonados por seus proprietários e confiscados pela Companhia das Índias Orientais. Uma vez que os holandeses tinham por meta o rentável comércio do açúcar, se justifica que tenham investido na recuperação das estruturas necessárias a esta economia, enquanto trabalharam muito pouco pela melhoria da cidade.</p>
+
+<p align=”justify”>Um dos governadores holandeses da Paraíba, durante o domínio holandês, deixou registrada sua impressão sobre a capitania e a cidade Filipéia, que teve seu nome alterado para Frederica (Frederickstadt) em honra de Frederico Henrique, Príncipe de Orange.</p>
+
+<p align=”justify”>Descrevendo-a, em 1639, Elias Herckman se referiu à existência de seis igrejas, sendo três ligadas aos conventos de São Francisco, de São Bento e do Carmo, e mais as igrejas da Matriz, Misericórdia e de São Gonçalo. (Figura 3)</p>
+
+<p align=”justify”>O convento de São Francisco era o maior e o mais bonito. Dele se apoderaram os holandeses, fortificando-o para dar abrigo ao governador e as tropas. Foi levantada uma trincheira em torno dele “com uma bateria que se collocou deante da egreja para dominar a entrada ou avenida”.</p>
+
+<p align=”justify”>Os frades carmelitas se encontravam no seu convento até a época deste relato, porém o mesmo não estava “ainda de todo acabado”. Estava inacabado, também, o convento de São Bento, tendo as paredes externas levantadas, mas sem coberta. Os holandeses fizeram deste um aquartelamento por considerarem o lugar apropriado para servir de fortificação diante da cidade. Construíram uma trincheira em torno do convento e aí se abrigaram até 1636, quando passaram a ocupar o convento de São Francisco, demoliu-se então a trincheira, e entregaram aos frades as paredes do convento, como estavam. “Mas até esta data elles nada mais teem ahi construido”.</p>
+
+<p align=”justify”>Sobre as demais igrejas existentes na cidade, Elias Herckman disse ser a Matriz a principal delas e “uma obra que promette ser grandiosa, mas até o presente não foi acabada, e assim continua, arruinando cada vez mais de dia em dia”. A Igreja da Misericórdia estava quase acabada e os portugueses a utilizavam em lugar da matriz. Por fim, referiu-se a “uma simples capella com a denominação de São Gonçalo” que assinalava o limite extremo da cidade. (Figura 4)</p>
+
+<p align=”justify”>A Frederica se estendia desta capela até o convento dos franciscanos, com um comprimento de aproximadamente “um quarto de hora de viagem”, mas se achava “escassamente edificada e com muito terreno desocupado”. Entre os demais edifícios apenas lhe chamou a atenção “a casa do Concelho com a praça do mercado” onde estava o pelourinho.</p>
+
+<p align=”justify”>Até aquele ano de 1639, as intervenções realizadas pelos holandeses na cidade restringiam-se à fortificação do convento dos franciscanos e à construção de “um armazem grande e capaz com um bonito mole ou dique no Varadouro, onde atracassem as embarcações, e se embarcasse ou desembarcasse o assucar, para commodo e utilidade dos mercadores”. Fica evidente o pequeno investimento feito pelos holandeses na Paraíba, onde o que lhes atraía era a produção do açúcar.</p> 
+
+									</td>
+
+									<!-- Coluna Imagens -->
+
+									<td valign="top" width="50%" align="center"> 
+
+										<img src="img/linhas-do-tempo/imgs-conteudo/3.jpg" />
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</div>
+
+
+
+
+
+
+
+
+
+						
+
+						<script>
+
+							$(document).ready(function(){
+
+								$("#linha5").click(function(){
+
+									var $this = $("#conteudo5");
+
+									$(".conteudo").not($this).hide();
+
+									$("#conteudo5").toggle(600);
+
+									$("#timeline > .linha > li").not(this).removeClass("selected");
+
+									$("#linha5").toggleClass("selected");
+
+								});
+
+							});
+
+						</script>
+
+						<div id="conteudo5" class="conteudo" style="display:none;"> 
+
+							<table border="0" width="100%">
+
+								<tr>       
+
+									<!-- Coluna Texto -->
+
+									<td valign="top" width="50%">
+
+										<b>A Cidade da Paraíba entre o final do século XVII e o século XVIII</b>
+
+<p align=”justify”>A guerra para a expulsão dos holandeses deixou a Paraíba em precária situação econômica. A imagem apreendida era de uma total ruína: plantações devastadas, povoações e engenhos destruídos. Os primeiros anos, a partir de 1654, foram consumidos na recuperação dos engenhos, ocorrendo isto a passo lento, devido à escassez de recursos materiais e humanos (Figura 1).</p>
+
+<p align=”justify”>Além disso, o açúcar que continuava sendo o principal produto da capitania sofria a concorrência das Antilhas, para onde os holandeses haviam levado sua experiência na produção açucareira, fato que derrubou o monopólio comercial do açúcar brasileiro. Como se não bastasse, alguns longos períodos de seca devastavam a agricultura, dizimavam rebanhos e matavam os escravos.</p>
+
+<p align=”justify”>Diante deste quadro, se conclui o quanto difícil e demorado foi o processo de recuperação da capitania, e particularmente da cidade que passara a se chamar Cidade da Parahyba, logo após a expulsão dos holandeses (Figura 2). Os parcos investimentos possíveis eram feitos na reconstrução das estruturas produtivas e no sistema de defesa da capitania, uma vez que por muito tempo ainda era esperada nova invasão.</p>
+
+<p align=”justify”>Apenas para ilustrar o quanto foi preciso aguardar para dar princípio a obras imprescindíveis na cidade, registra-se que somente em 1662, teve início a reconstrução da Igreja Matriz, que atravessou todo o século XVIII, pois os recursos disponíveis nunca eram o suficiente para a concluir.</p>
+
+<p align=”justify”>Apesar deste contexto de limitações, no início do século XVIII a cidade ganhou alguns novos edifícios. Havendo sido denunciada, desde 1694, a precária forma de armazenar a pólvora na cidade, em 1710, ocorreu a conclusão da nova Casa da Pólvora edificada na Ladeira, hoje denominada de São Francisco.</p>
+
+<p align=”justify”>Mais rico foi o patrimônio edificado pela Igreja, o qual trouxe ares de monumentalidade para a cidade, ganhando destaque os edifícios religiosos que sobressaíam perante a modesta arquitetura praticada na cidade. Na segunda metade do século XVII, começaram a retornar à Paraíba as ordens religiosas, chegando primeiramente os beneditinos, e em seguida os franciscanos, carmelitas e jesuítas. </p>
+
+<p align=”justify”>Foram muitas as dificuldades enfrentadas por estas ordens religiosas para retomar a construção e conclusão dos seus conjuntos arquitetônicos, uma vez que com a pobreza da capitania não podiam contar com as esmolas dos fiéis. Mas superando todos os obstáculos, enfrentaram longos períodos de obras que atravessaram todo o século XVIII, e só nas últimas décadas daquela centúria estavam sendo concluídas estas casas religiosas. Mesmo assim, conseguiram erguer conventos que marcaram presença pela dimensão que ganharam, e igrejas que exibiam um requinte arquitetônico e artístico (Figura 3).</p>
+
+<p align=”justify”>A estes conjuntos arquitetônicos edificados pelas ordens religiosas, somavam-se as igrejas das irmandades que surgiam como consequência do crescimento e estratificação social da população. Entre estas irmandades, duas reuniam os homens mais ricos e nobres: a ordem terceira de São Francisco e a ordem terceira do Carmo, as quais ergueram suas igrejas em anexo às respectivas ordens monásticas (Figura 4).</p>
+
+<p align=”justify”>As demais irmandades edificaram suas igrejas isoladas, em sítios que vão acabar se tornando pontos referenciais para a expansão da malha urbana. Entre estas, a notícia mais antiga diz respeito à construção da Igreja de Nossa Senhora do Rosário dos Pretos (Figura 5), a qual já estava iniciada em 1697, localizando-se na Rua da Baixa – trecho pouco habitado da Rua Direita, entre a Igreja da Misericórdia e o conjunto dos jesuítas (Figura 6).</p>
+
+<p align=”justify”>A 24 de Setembro de 1729, foi lançada a primeira pedra da igreja da Irmandade de Nossa Senhora das Mercês, sagrada a 21 de Setembro de 1741, a qual reunia os homens pardos e livres. Em frente a esta se formou o Largo das Mercês até onde se prolongava a Rua da Cadeia, que tinha início em frente ao conjunto arquitetônico dos carmelitas (Figura 7).</p>
+
+<p align=”justify”>Por sua vez, a construção da igreja da Irmandade de Nossa Senhora Mãe dos Homens Pardos, em andamento em 1767, foi um elemento indutor da expansão da cidade em direção ao futuro bairro de Tambiá, local onde havia uma fonte de água com o mesmo nome que abastecia parte da população atraindo-a para ali.</p>
+
+<p align=”justify”>Enquanto estas mudanças se processavam na cidade, a situação econômica da capitania se agravava e o poder régio tomava medidas para enfrentar a crise instalada em Portugal. Decidiu o Rei D. José e seu Primeiro Ministro, o Marquês de Pombal, anexar a Capitania da Paraíba à Pernambuco, em Janeiro de 1755, deixando a administração local de ter uma posição de governo independente, sendo também extinta a Junta da Fazenda da Paraíba.</p>
+
+<p align=”justify”>Os capitães-mores da Paraíba, mesmo com autorização da Coroa portuguesa, não podiam executar obra sem a autorização da Junta da Fazenda de Pernambuco, o que era difícil de obter. Na cidade, as limitações financeiras e administrativas da capitania se refletiam na falta de obras para recuperação e melhoria das fontes e ruas públicas e no estado de arruinamento de edifícios ligados ao poder, como a alfândega, a cadeia, a câmara, o açougue, bem como do cais do porto do Varadouro.
+
+Em 1798, assumiu a administração da Paraíba, Fernando Delgado Freire de Castilho (1798-1802), que tinha entre as suas atribuições avaliar a necessidade de libertar a Paraíba da subordinação a Pernambuco. Este demonstrou à Coroa portuguesa que a Paraíba submergia na inércia por conta da anexação. Os fatos acabaram por levar a Rainha D. Maria I, em 1799, a declarar a Paraíba liberta de Pernambuco. No entanto, continuava a dependência econômica, já que a criação da Junta da Fazenda da Paraíba só foi autorizada em 1809. 
+
+Nestas condições, a capitania da Paraíba assistiu a entrada do século XIX, e a cidade era reflexo do contexto da época, resultando no restrito crescimento da sua malha urbana, cuja paisagem pouco tinha a ostentar a não ser os significativos edifícios religiosos (Figura 8).</p> 
+
+									</td>
+
+									<!-- Coluna Imagens -->
+
+									<td valign="top" width="50%" align="center"> 
+
+										<img src="img/linhas-do-tempo/imgs-conteudo/4.jpg" />
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</div>
+
+
+
+
+
+
+
+
+
+						
+
+						<script>
+
+							$(document).ready(function(){
+
+								$("#linha6").click(function(){
+
+									var $this = $("#conteudo6");
+
+									$(".conteudo").not($this).hide();
+
+									$("#conteudo6").toggle(600);
+
+									$("#timeline > .linha > li").not(this).removeClass("selected");
+
+									$("#linha6").toggleClass("selected");
+
+								});
+
+							});
+
+						</script>
+
+						<div id="conteudo6" class="conteudo" style="display:none;"> 
+
+							<table border="0" width="100%">
+
+								<tr>       
+
+									<!-- Coluna Texto -->
+
+									<td valign="top" width="50%">
+
+										<b>O século XIX e a modernização da cidade da Paraíba</b>
+
+<p align=”justify”>Em 1810, a cidade da Paraíba foi visitada por Henry Koster, um inglês que residia no Recife. Koster fez viagem por terra de Pernambuco até o Ceará e registrou suas impressões no livro “Viagens ao Nordeste do Brasil”. Sobre a Paraíba escreveu: “Há vários indícios de que a Parahyba fora mais importante que atualmente, a principal rua é pavimentada com grandes pedras, mas devia ser reparada. As residências têm geralmente um andar, servindo o térreo para loja, algumas delas possuem janelas com vidro, melhoramento há pouco tempo introduzido no Recife”. (Figura 1)</p>
+
+<p align=”justify”>Quando a 7 de Setembro de 1822 foi declarada a Independência do Brasil, a cidade da Paraíba contava com menos de 3.000 habitantes, enquanto em 1851, possuía 9.000. Estes números indicam que estava por vir um período de relativa prosperidade.</p>
+
+<p align=”justify”>Alguns melhoramentos pertinentes ao processo de modernização dos centros urbanos, ocorrido no século XIX, começaram a chegar à cidade. Em 1829, foi implantada a primeira iluminação pública composta por onze lampiões alimentados a azeite de mamona. Em 1836, foi criado o Liceu Paraibano, o primeiro estabelecimento de ensino secundário da Paraíba. Neste mesmo ano, teve início a reconstrução da ponte do Rio Sanhauá, cuja existência remontava a 1831. (Figura 2)</p>
+
+<p align=”justify”>As ideias de ordenação, enfatizadas nas legislações urbanas da época, também se refletiram na Paraíba. Em 1850, o Presidente da Província sancionou a Lei n.º 26, que disciplinava as edificações, estipulando a largura e a altura das fachadas das casas e de suas janelas. Estabelecia normas para as calçadas, proibindo degraus no exterior das edificações, e fixava em 80 palmos - aproximadamente 17 metros - a largura das novas ruas que fossem abertas.</p>
+
+<p align=”justify”>Nessa época, a Rua Direita (atual Duque de Caxias) reunia a maior parte dos sobrados existentes na cidade (Figura 3), havendo também alguns na Rua das Convertidas (atual Maciel Pinheiro) e no Varadouro.</p>
+
+<p align=”justify”>Na segunda metade do século XIX, o incremento da lavoura algodoeira proporcionou novas perspectivas à economia paraibana, e a riqueza produzida pelo algodão se refletiu num crescente processo de melhoramentos urbanos.</p>
+
+<p align=”justify”>Governando a Paraíba entre os anos de 1857 e 1859, Beaurepaire Rohan se destacou na preocupação com o desenvolvimento material e cultural da província. Criou o jardim botânico da capital, que deveria transformar-se em escola agrícola; criou a primeira escola para mulheres, o Colégio de Nossa Senhora das Neves, fechado por seu sucessor e só reaberto em 1896, pela Diocese (Figura 4); instalou em uma das salas do Liceu Paraibano a Biblioteca Pública da Paraíba.</p>
+
+<p align=”justify”>Observando a “Planta da Cidade da Parahyba”, levantada em 1855 pelo 1º Tenente do Corpo de Engenheiros, Alfredo de Barros e Vasconcelos, verifica-se que a área ocupada pela cidade era pouco superior aos limites demarcados nas cartografias do século XVII, apesar de transcorridos quase três séculos da sua fundação (Figura 5). No entanto, a malha urbana se expandira sobre vazios existentes na área de encosta situada entre as cidades baixa e alta, e uma série de novos logradouros surgiu, marcando a cidade de século XIX. Começava, também, o crescimento da cidade seguindo os eixos definidores dos futuros bairros de Trincheiras e Tambiá.</p>
+
+<p align=”justify”>Diversos edifícios vieram registrar esta fase de prosperidade e modernização da Paraíba na segunda metade do século XIX, alguns expressando, também, as mudanças de hábito da sociedade da época, a exemplo do prédio da Escola Normal, concluído em 1886, e do Teatro Santa Roza, inaugurado em 1889 (Figura 6). Com estes edifícios era introduzida a linguagem neoclássica na cidade e ganhavam formas outras áreas públicas que estabeleciam um diálogo entre arquitetura e cidade, segundo princípios urbanísticos próprios do final do século XIX.</p>
+
+<p align=”justify”>Entre os melhoramentos advindos com a riqueza do algodão, o mais notável foi a ferrovia que começou a ser implantada em 1880. Outro símbolo de modernidade foi a chegada do serviço de bondes movidos à tração animal, instalado na capital no ano de 1896, favorecendo a consolidação da ocupação dos bairros de Tambiá e Trincheiras (Figura 7). </p>
+
+<p align=”justify”>O poder público também fez algumas intervenções modernizantes no meio urbano. Na cidade baixa, o Largo da Gameleira, porta de entrada da cidade, foi arborizado e calçado, passando a ter a denominação de Praça Álvaro Machado. Na cidade alta, obras foram iniciadas, em 1879, para transformar o Campo do Comendador Felizardo em um Jardim Público, sendo gradeado e arborizado com palmeiras imperiais, tendo um coreto em torno do qual se reunia a população que vivia uma época de transformações nos hábitos de convívio social (Figura 8).</p>  
+
+									</td>
+
+									<!-- Coluna Imagens -->
+
+									<td valign="top" width="50%" align="center"> 
+
+										<img src="img/linhas-do-tempo/imgs-conteudo/5.jpg" />
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</div>
+
+
+
+
+
+
+
+
+
+						
+
+						<script>
+
+							$(document).ready(function(){
+
+								$("#linha7").click(function(){
+
+									var $this = $("#conteudo7");
+
+									$(".conteudo").not($this).hide();
+
+									$("#conteudo7").toggle(600);
+
+									$("#timeline > .linha > li").not(this).removeClass("selected");
+
+									$("#linha7").toggleClass("selected");
+
+								});
+
+							});
+
+						</script>
+
+						<div id="conteudo7" class="conteudo" style="display:none;"> 
+
+							<table border="0" width="100%">
+
+								<tr>       
+
+									<!-- Coluna Texto -->
+
+									<td valign="top" width="50%">
+
+										<b>O Século XX - Da cidade da Paraíba à cidade de João Pessoa</b>
+
+<p align=”justify”>Nas primeiras décadas do século XX, o poder público promoveu intervenções voltadas para a melhoria da infra-estrutura urbana, como a implantação dos serviços de abastecimento de água, iluminação e transportes públicos fazendo uso de energia elétrica, calçamento de ruas, etc. Com estas propiciava, também, a estruturação de novos espaços urbanos e o “aformoseamento” da cidade. (Figura 1)</p>
+
+<p align=”justify”>Neste sentido, entre os anos de 1908 e 1912, no governo de João Machado, ocorreu a abertura da avenida João Machado, o calçamento de ruas nos bairros de Trincheiras e Tambiá e melhoramentos na ferrovia que seguia em direção à praia de Tambaú, começando a atrair a população em direção ao litoral.</p>
+
+<p align=”justify”>Higienizando e embelezando a cidade, foram realizados melhoramentos no Jardim Público, onde foi construído um novo coreto, e no antigo Campo do Conselheiro Diogo que passou a ser a Praça Pedro Américo, também dotada de coreto, iluminação e mobiliário. (Figura 2)</p>
+
+
+
+<p align=”justify”>Começavam a chegar à cidade alguns arquitetos que contribuíram para as transformações no repertório formal das edificações. Entre estes, cita-se o arquiteto italiano Paschoal Fiorillo, autor do projeto para o Grupo Escolar Tomaz Mindello, inaugurado a 9 de Setembro de 1916 (Figura 3). Este edifício é apontado como um dos marcos da introdução da arquitetura eclética produzida pelos novos profissionais que chegavam à Paraíba. Em seguida vieram Hermenegildo diLascio, Octavio Freire, Paula Machado, Giacomo Palumbo, Clodoaldo Gouveia, entre outros.</p> 
+
+<p align=”justify”>Outras tipologias arquitetônicas foram surgindo na cidade, atendendo ora às novas necessidades da população, ora aos novos conceitos de ordem e a princípios sanitaristas. Assim, no início do século XX, a cidade contava com dois mercados públicos: o mercado de Tambiá e o Mercado Montenegro, situado na Rua Beaurepaire Rohan. (Figura 4)</p>
+
+<p align=”justify”>Não estando o poder público atento aos serviços de saúde e assistência social, eram associações filantrópicas que amparavam a população neste sentido. Por iniciativa da Santa Casa da Misericórdia foi construído e inaugurado a 8 de Novembro de 1914, o novo Hospital Santa Isabel, implantado em sítio afastado do centro da cidade por questões higienistas. Da mesma época são os edifícios do Asilo de Mendicidade (1913) e o Instituto de Proteção e Assistência à Infância (1913) construído na recém aberta Avenida João Machado, na qual também estava em construção, em 1916, o Orfanato D. Ulrico. (Figura 5)</p>
+
+<p align=”justify”>No governo de Camilo de Holanda (1916-1920) a Paraíba atravessou uma fase de pleno desenvolvimento. O preço do algodão, principal produto do estado se encontrava em alta durante a Primeira Guerra Mundial, chegavam recursos do governo federal através da IOCS – Inspetoria de Obras Contra a Seca, que movimentavam muitas obras.</p>
+
+<p align=”justify”>Neste período, ruas foram abertas, alargadas, alinhadas, calçadas, além de receberem arborização e iluminação elétrica. A abertura da Avenida Epitácio Pessoa foi iniciada e as duas vertentes de crescimento da cidade – Trincheiras e Tambiá – se tornaram mais próximas através da abertura da Avenida Maximiano de Figueiredo. Outras praças foram modernizadas: Venâncio Neiva, Aristides Lobo, Pedro Américo e a Praça do Conselheiro Henriques, atual Praça D. Adauto. (Figura 6)</p>
+
+<p align=”justify”>Grande investimento foi feito durante o governo de Camilo de Holanda para a construção de escolas. Foi construído um novo edifício para a Escola Normal (atual Palácio da Justiça), situado em frente ao Jardim Público, e os grupos escolares Epitácio Pessoa, Antônio Pessoa e Isabel Maria das Neves.</p>
+
+<p align=”justify”>Também são desta época o imponente prédio da Imprensa Oficial (hoje desaparecido), a Associação Comercial e a Academia de Comércio Epitácio Pessoa. Estes eram marcos evidentes da prosperidade do Estado da Paraíba e do desenvolvimento da sua capital. (Figura 8)</p>
+
+<p align=”justify”>Desenvolvimento este que se estendeu ao longo da década de 1920, quando foram finalmente executados os serviços de saneamento da cidade, há muito tempo esperado e a implementação do sistema de abastecimento de água, projetos elaborados pelo escritório do engenheiro Saturnino de Brito. Por fim foi saneada a antiga Lagoa dos Irerês que bloqueava o crescimento da cidade em direção ao leste. Em seu local surgiu o Parque Sólon de Lucena. (Figura 9)</p>
+
+<p align=”justify”>Também foram abertas muitas ruas e praças, exigindo por vezes a demolição de edifícios, entre estes diversas igrejas setecentistas. A abertura da Praça Vidal de Negreiros fez desaparecer a Igreja de Nossa Senhora do Rosário dos Pretos. A Igreja da Mãe dos Homens, no bairro de Tambiá, foi demolida para o alargamento da Rua Monsenhor Walfredo Leal e implantação da Praça Antônio Pessoa. (Figura 10 e 11)</p>
+
+<p align=”justify”>Começava o período em que a cidade voltava-se em direção à orla marítima. Em 1922, foi construída e inaugurada a Praça da Independência, em comemoração ao centenário daquele fato histórico. Esta praça foi mais um elemento a atrair a população em sentido oposto ao núcleo antigo da cidade. (Figura 12)</p>
+
+<p align=”justify”>O mesmo ocorreu com a conclusão das obras de urbanização do Parque Sólon de Lucena (Figura 13), em 1937, que possibilitou a abertura ou maior ocupação das avenidas Getúlio Vargas, Coremas, Duarte da Silveira e Maximiano de Figueiredo. Com a pavimentação da Avenida Epitácio Pessoa, em 1952, a população passou a procurar a praia de Tambaú como moradia definitiva. Nos espaços vazios ao longo desta avenida, progressivamente, foram se consolidando novos bairros como a Torre e foram abertos vários loteamentos, como Miramar e Tambauzinho.</p> 
+
+<p align=”justify”>Definitivamente, o núcleo central da cidade começava a perder seu caráter de lugar de moradia, uso que se deslocara, primeiramente, para as ruas mais arejadas dos bairros de Tambiá e Trincheiras, e agora se encaminhava em direção à Praia de Tambaú. Mas o centro da cidade mantinha sua vocação para o comércio, os serviços e reunia quase todas as repartições públicas.</p>
+
+
+
+<p align="justify">Algumas ruas do Varadouro, como a Maciel Pinheiro, concentravam, até meados do século XX, o melhor comércio grossista e varejista da capital paraibana. Entre a Rua Beaurepaire Rohan e o Sanhauá, o número de prédios comerciais prevalecia, em maioria esmagadora. Na cidade alta, o comércio fino se espalhava pela Rua Duque de Caxias e adjacências, onde estavam magazines, bons armazéns de alimentos, lanchonetes e sorveterias.
+
+Mas a partir da década de 1970 o comércio mais refinado foi se encaminhando em direção ao Parque Sólon de Lucena, as residências cada vez mais foram se deslocando para os novos bairros da cidade com tendência a ser cada vez mais litorânea. A cidade denominada de João Pessoa, desde os acontecimentos políticos da Revolução de 1930, estava olhando para o horizonte do mar, e esquecendo as margens do Rio Sanhauá, onde teve origem a antiga Filipéia de Nossa Senhora das Neves. (Figura 14)</p> 
+
+									</td>
+
+									<!-- Coluna Imagens -->
+
+									<td valign="top" width="50%" align="center"> 
+
+										<img src="img/linhas-do-tempo/imgs-conteudo/6.jpg" />
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</div>
+
+
+
+
+
+
+
+
+
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+			</td>
+
+		</tr>
+
+	</table>
+
+	
+
+	<!-- End of Page -->
+
+	
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>			$(document).ready(function(){
+
+	  $("#btnLogo").hover(function(){
+
+			$("#btnLogo").attr("src", "img/footer_hover.png");
+
+	  },function(){
+
+			$("#btnLogo").attr("src", "img/footer.png");
+
+	  }	  
+
+	  );
+
+});
+
+</script>
+
+	<div id="footer"><div class="centerCT">
+
+	<img src="img/footer.png" class="btnLogo" id="btnLogo"/>
+
+	<span>© 2016 Copyright www.memoriajoaopessoa.com.br :: Todos os direitos reservados.
+
+	<br/>Imagens e informações de responsabilidade da fonte citada.</span>
+
+	</div></div>
+
+</body>
+
+
+
+</html>
