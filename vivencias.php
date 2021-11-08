@@ -24,7 +24,7 @@ include("header.php");
 	{
 		float: left;
 		margin: 0px 0px 20px 14px !important;
-		width: 228px;
+		width: 200px;
 		display: block;
 		overflow: hidden;
 	}
