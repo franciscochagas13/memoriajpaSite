@@ -22,7 +22,7 @@ include("header.php");
    .item
    {
     float:left;
-    width: 180px;
+    width: 270px;
     height:200;
     margin-right: 20px;
     display: block;
