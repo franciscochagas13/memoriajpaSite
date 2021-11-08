@@ -23,9 +23,11 @@ include("header.php");
 
 .item
 {
-float:left;
-margin-right: 20px;
-margin-bottom: 20px
+    float: left;
+		margin: 0px 0px 20px 14px !important;
+		width: 200px;
+		display: block;
+		overflow: hidden;
 }
 
 .item > div > a > img {
@@ -81,7 +83,7 @@ text-decoration: none !important;
                                 require_once '../../../galaxy/c.php';
                                 $sql = "SELECT id,miniatura,pdf FROM memoriasocialpdf";
                                 $q = $pdo->prepare($sql);
-                                    $q->execute(['%id']);
+                                    $q->execute(["%id"]);
                                     $q->execute(['%miniatura']);
                                     $q->execute(['%pdf']);
                                     $q->setFetchMode(PDO::FETCH_ASSOC);
