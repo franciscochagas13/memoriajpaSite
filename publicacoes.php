@@ -104,7 +104,22 @@ include("header.php");
 		font-size: 22px;
 	}
 	
-	p { text-align: justify;}
+	.p { 
+		text-align: center;
+		background-color: #ff4d4d;
+	}
+
+	.b {
+		background-color: #d9d9d9;
+		text-align: justify;
+
+	}
+
+	.d{
+		background-color: #d9d9d9;
+		text-align: center;
+	}
+
 	
 </style>
 
@@ -117,9 +132,9 @@ include("header.php");
     <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">Ano</th>
-      <th scope="col">Publicação</th>
-      <th scope="col">Download</th>
+      <th scope="col" class="p">Ano</th>
+      <th scope="col" class="p">Publicação</th>
+      <th scope="col" class="p">Download</th>
     </tr>
   </thead>
   <tbody>
@@ -144,10 +159,10 @@ include("header.php");
 
                    echo '
                    <tr>
-	<td>'.$r["ano"].'</td>
-	<td><p align="justify">'.$r["conteudo"].'</p></td>
+	<td class="b">'.$r["ano"].'</td>
+	<td class="b"><p align="justify">'.$r["conteudo"].'</p></td>
 	
-	<td><a href="publicacoes/'.$r["download"].'"data-lity><img src="img/download.png" width="30%" weight="30%"/> </a></td>
+	<td width="50px" class="d"><a href="publicacoes/'.$r["download"].'"data-lity data-ot="Download"><img src="img/download2.png" width="60%" weight="60%"/> </a></td>
 	
       
     </tr>  
