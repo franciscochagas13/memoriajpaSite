@@ -1479,7 +1479,7 @@ float: left;
 					<!-- <li><a href="#"  title="EM MANUTENÇÃO">Definições</a>
 
 						<div class="clear"></div></li> -->
-					<li><a href="definicoes.php" data-step="" data-intro="a colocar.">DEFINIÇÕES</a>
+					<li><a href="definicoes.php" data-step="" data-intro="a colocar.">HISTÓRICO</a>
 
 						<div class="clear"></div></li>
 					<li><a href="centro-historico.php" data-step="2" data-intro="Aqui você pode obter mais informações sobre o nosso Centro Histórico, quais orgãos são responsáveis por sua gestão e conceitos básicos sobre patrimônio e tombamento.">CENTRO HISTÓRICO</a>

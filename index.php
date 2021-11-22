@@ -89,7 +89,7 @@ include("header.php");
 	{
 		width: 100%;
 
-		height: 150px;
+		height: 330px;
 
 		line-height:120px;
 		display: block;
@@ -99,7 +99,23 @@ include("header.php");
 	}
 </style>
 
+<div class="centerCT">
+	<div id="conteudoIndex" style="width: 100%;" data-step="9" data-intro="Aqui você pode conhecer mais sobre o nosso projeto."> 
+		<div class="homeBlock">
+		<!-- O portal Memória João Pessoa --> 
+			<h1><b>HOME</b></h1>        
+		
+		</div>
+	</div>
+</div>
 
+<div class="centerCT" data-step="11" data-intro="Conheça alguns dos nossos trabalhos..."> 
+
+<div class="linha">
+	<div><img style="float: left;" src="img/home/joaop.jpg"/><font face="Arial Black" size="4"style="float:left; margin-left:5px;"> <p align = center style="float:left">PESQUISA</p></font></div>
+
+
+</div>  
 
 <div class="centerCT">
 	<div id="conteudoIndex" style="width: 100%;" data-step="9" data-intro="Aqui você pode conhecer mais sobre o nosso projeto."> 
@@ -124,46 +140,51 @@ include("header.php");
 	</div>
 </div>
  -->
- <div class="homeFace" data-step="10" data-intro="Curta a nossa fanpage para ficar por dentro de todo o conteúdo sobre a história de João Pessoa!">
-	<div class="centerCT">
-		<h1>Curta nosso Instagram</h1>      
-		<div class="guidee">
-			<p align="justify" style="max-width: 580px; float: left; margin-left: 20px;">O projeto Memória João Pessoa está também no Instagram! Em nossa página, você poderá encontrar notícias, curiosidades, vídeos/fotos antigas, eventos e muito mais!</p>
-			<div class="button"><a href="https://www.instagram.com/memoriajp/" target="_blank" class="butaus butaus-1 butaus-1e">CURTIR</a></div>
+
+ <div class="centerCT" data-step="11" data-intro="Conheça alguns dos nossos trabalhos..."> 
+
+<div class="linha">
+	<div><img style="float: left;" src="img/home/joaopc.jpg"/><font face="Arial Black" size="4"style="float:left; margin-left:5px;"> <p align = center style="float:left">PESQUISA</p></font></div>
+
+
+</div>  
+
+
+<div class="centerCT">
+	<div id="conteudoIndex" style="width: 100%;" data-step="9" data-intro="Aqui você pode conhecer mais sobre o nosso projeto."> 
+		<div class="homeBlock">
+		<!-- O portal Memória João Pessoa --> 
+			     
+			<p align="justify">João Pessoa é uma cidade costeira próxima da foz do rio Paraíba, no leste do Brasil. A sua cidade velha é conhecida pela arquitetura barroca e art nouveau. A igreja de São Francisco, do século XVI, tem azulejos portugueses pintados no pátio e uma capela ornamentada com ouro. As praias de Tambaú e Cabo Branco estão repletas de bares e discotecas, além de lojas que vendem artesanato local de madeira e cerâmica.</p>
+			<p align="justify">Através de um passeio por esta página, você poderá conhecer sobre a formação, história e tradições de João Pessoa, ver registros de outras épocas, vivenciar espaços da cidade, além de ter acesso a informações sobre as edificações mais significativas eos sítios urbanos que dão identidade à mesma.</p>
+
 		</div>
 	</div>
 </div>
 
-<div class="centerCT" data-step="11" data-intro="Conheça alguns dos nossos trabalhos..."> 
-         
+<div class="centerCT">
+	<div id="conteudoIndex" style="width: 100%;" data-step="9" data-intro="Aqui você pode conhecer mais sobre o nosso projeto."> 
+		<div class="homeBlock">
+		<!-- O portal Memória João Pessoa --> 
+			<h1><b>Acesso Rápido</b></h1>        
+		
+		</div>
+	</div>
+</div>
+
+
+
 
 <div class="linha">
-	<div><img style="float: left;" src="img/testes/pesquisa.jpg"/><font face="Arial Black" size="4"style="float:left; margin-left:5px;"> <p align = center style="float:left">PESQUISA</p></font></div>
+	
 
-	<div class="caixaFoto post"data-ot="Definições"><a href="definicoes.php"><img src="img/testes/1.png"/></a></div>
-	<div class="caixaFoto post"data-ot="Centro Histórico" ><a href="centro-historico.php"><img src="img/testes/2a.jpg"/></a></div>
-	<div class="caixaFoto post"data-ot="Formação e Evolução"><a href="formacao-e-evolucao.php"><img src="img/testes/3a.jpg"/></a></div>
-	<div class="caixaFoto post"data-ot="Acervo Patrimonial"><a href="jogos.php"><img src="img/testes/4.png"/></a></div>
-
-</div>
-<div class="linha">
-
-	<div><img style="float: left;" src="img/testes/lazer.jpg"/> <font face="Arial Black" size="4"style="float:left; margin-left:45px;"> <p align = center style="float:left">LAZER</p></font></div>
-	<div class="caixaFoto post"data-ot="Memória Social"><a href="memoria-social.php"><img src="img/testes/5.jpg"/></a></div>
-	<div class="caixaFoto post"data-ot="Vivências" ><a href="vivencias.php"><img src="img/testes/6.jpg" /></a></div>
-	<div class="caixaFoto post"data-ot="Postais"><a href="postais.php"><img src="img/testes/7.jpg"/></a></div>
-	<div class="caixaFoto post"data-ot="Galeria"><a href="galeria.php"><img src="img/testes/8.jpg"/></a></div>
+	<div class="caixaFoto post"data-ot="Definições"><a href="definicoes.php"><img src="img/home/jp.jpeg"/></a></div>
+	<div class="caixaFoto post"data-ot="Centro Histórico" ><a href="centro-historico.php"><img src="img/home/old.jpg"/></a></div>
+	<div class="caixaFoto post"data-ot="Formação e Evolução"><a href="formacao-e-evolucao.php"><img src="img/home/igr.jpg"/></a></div>
+	
 
 </div>
-<div class="linha">
 
-	<div><img style="float: left;" src="img/testes/jogos.jpg"/> <font face="Arial Black" size="4"style="float:left; margin-left:45px;" > <p align = center style="float:left">JOGOS</p></font></div>
-	<div class="caixaFoto post"data-ot="Memória"><a href="jogos.php"><img src="img/testes/9.png"/></a></div>
-	<div class="caixaFoto post"data-ot="Sete Erros" ><a href="jogos.php"><img src="img/testes/10.png"/></a></div>
-	<div class="caixaFoto post"data-ot="PaperToy"><a href="jogos.php"><img src="img/testes/11.png"/></a></div>
-	<div class="caixaFoto post"data-ot="Para Colorir"><a href="jogos.php"><img src="img/testes/12.png"/></a></div>
-
-</div>
 
 </div>      
 

@@ -2,148 +2,174 @@
 
 include("header.php");
 
-
-
 ?>
 
-<title>Definifições - Memória João Pessoa</title>
+<title>Histórico - Memória João Pessoa</title>
 
-<meta property="og:image" content="http://www.memoriajoaopessoa.com.br/img/facebook.png"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
 
-<meta property="og:title" content="Definifições - Memória João Pessoa"/>
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
 
-<meta property="og:url" content="http://www.memoriajoaopessoa.com.br/Definifições.jsf"/>
-
-<meta property="og:site_name" content="Memória João Pessoa"/>
-
-<meta property="og:type" content="website"/>
-
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 
 <style>
-
-	.titulo{
-
-
-
-		color:white;
-
-
-
+	.hm-presentation
+	{
+		text-align: center;
+	}
+	.hm-item
+	{
+		margin: 40px 3%;
+		max-width: 167px !important;
+		width: 22%;
+	}
+	.hm-presentation img
+	{
+		max-width: 100%;
 	}
 
-	.filtrar {
-
-		color: #B0B0B0;
-
-		font-size: 26px;
-
-		font-weight: bold;
-
-		margin-left: 40px;
-
-		font-family: 'Open Sans Condensed', sans-serif;
-
-		text-transform: uppercase;
-
+	.hm-presentation img
+	{
+		max-width: 100%;
 	}
 
+	@media only screen and (min-width:1290px) and (max-width: 1420px)
+	{
+		.caixaFoto
+		{
+			margin-left: 3% !important;
+		}
+	}
+	@media only screen and (min-width:0px) and (max-width: 1140px)
+	{
+		.caixaFoto
+		{
+			width: 80px !important;
+			height: 80px !important;
+			margin-left: 10px !important;
+		}
+	}
+	@media only screen and (min-width:1141px) and (max-width: 1280px)
+	{
+		.caixaFoto
+		{
+			width: 100px !important;
+			height: 100px !important;
+			margin-left: 20px !important;
+		}
+	}
 
+	img.btnLogo {
+		margin-top: 10px;
+		float: left;
+	}
 
+	.caixaFoto
+	{
+		width: 120px;
+		height: 120px;
+		border-radius: 100px;
+		overflow: hidden;
+		float: left;
+		margin-left: 5%
+	}
+
+	.img-rounded
+	{
+		max-width: 152px !important;
+		margin-left: -32px;
+		
+	}
+
+	.linha
+	{
+		width: 100%;
+
+		height: 500px;
+
+		line-height:120px;
+		display: block;
+		overflow: hidden;
+		padding: 19px 0px;
+		border-bottom: 2px solid rgb(229, 229, 229);
+	}
 </style>
 
+<div class="centerCT">
+	<div id="conteudoIndex" style="width: 100%;" data-step="9" data-intro="Aqui você pode conhecer mais sobre o nosso projeto."> 
+		<div class="homeBlock">
+		<!-- O portal Memória João Pessoa --> 
+			<h1><b>Histórico</b></h1>        
+		
+		</div>
+	</div>
+</div>
+
+<div class="centerCT" data-step="11" data-intro="Conheça alguns dos nossos trabalhos..."> 
+
+<div class="linha">
+	<div><img style="float: left;" src="img/historico/joao.png"/><font face="Arial Black" size="4"style="float:left; margin-left:5px;"> <p align = center style="float:left"></font></div>
 
 
+</div>  
+
+<div class="centerCT">
+	<div id="conteudoIndex" style="width: 100%;" data-step="9" data-intro="Aqui você pode conhecer mais sobre o nosso projeto."> 
+		<div class="homeBlock">
+		<!-- O portal Memória João Pessoa --> 
+		       
+			<p align="justify">Uma das mais antigas capitais do Brasil, é também conhecida como “Porta do Sol” porque no município está localizada a Ponta do Seixas, ponto mais oriental do continente americano. Foi fundada por colonizadores portugueses com o nome de Cidade Real de Nossa Senhora das Neves, em 5 de agosto de 1585.</p>
+			<p align="justify">Através de um passeio por esta página, você poderá conhecer sobre a formação, história e tradições de João Pessoa, ver registros de outras épocas, vivenciar espaços da cidade, além de ter acesso a informações sobre as edificações mais significativas eos sítios urbanos que dão identidade à mesma.</p>
+
+		</div>
+	</div>
+</div>
+
+<!-- <div class="homeFace" data-step="10" data-intro="Curta a nossa fanpage para ficar por dentro de todo o conteúdo sobre a história de João Pessoa!">
+	<div class="centerCT">
+		<h1>Curta nossa Fanpage no Facebook</h1>      
+		<div class="guidee">
+			<img src="img/fblogo.png" style="float: left; margin-top: -13px;" />
+			<p align="justify" style="max-width: 580px; float: left; margin-left: 20px;">O projeto Memória João Pessoa está também no Facebook! Em nossa página, você poderá encontrar notícias, curiosidades, vídeos/fotos antigas, eventos e muito mais!</p>
+			<div class="button"><a href="https://www.instagram.com/memoriajp/" target="_blank" class="butaus butaus-1 butaus-1e">CURTIR</a></div>
+		</div>
+	</div>
+</div>
+ -->
+
+ <div class="centerCT" data-step="11" data-intro="Conheça alguns dos nossos trabalhos..."> 
+
+<div class="linha">
+	<div><img style="float: left;" src="img/historico/para.png"/><font face="Arial Black" size="4"style="float:left; margin-left:5px;"> <p align = center style="float:left"></font></div>
+
+
+</div>  
 
 
 <div class="centerCT">
+	<div id="conteudoIndex" style="width: 100%;" data-step="9" data-intro="Aqui você pode conhecer mais sobre o nosso projeto."> 
+		<div class="homeBlock">
+		<!-- O portal Memória João Pessoa --> 
+			     
+			<p align="justify">A maior parte do território da Paraíba atual integrou a Capitania de Itamaracá, doada a Pero Lopes de Sousa, em 1534. Mas a colonização efetiva começou em 1581, durante a União Ibérica, com um povoado na Ilha da Camboa, numa margem do rio Paraíba, que foi destruído por piratas franceses. Nessa época, o comércio do pau-brasil, na região, já era intenso.</p>
+			<p align="justify">Através de um passeio por esta página, você poderá conhecer sobre a formação, história e tradições de João Pessoa, ver registros de outras épocas, vivenciar espaços da cidade, além de ter acesso a informações sobre as edificações mais significativas eos sítios urbanos que dão identidade à mesma.</p>
 
-	<!-- Begin Page -->
-
-	<h1>Definiições</h1>
-
-	
-
-
-	<table  width="150%" height="0" align="center" border="0" cellpadding="0" cellspacing="0">
-
-		<tr>
-
-			<td height="0">
-
-
-
-				<span class="filtrar">O que é?</span><br/><br/>
-
-				<table width="1140px" border="0" >
-
-					<tr>
-
-						<td>
-
-						<div style="float:left; margin-left:200px;"><a href="ver_definicoes.php?c=patrimonio"class="btn btn-primary">PATRIMÔNIO</a> </div>
-
-							<div style="float:left; margin-left:20px;"> <a href="ver_definicoes.php?c=monumento" class="btn btn-primary">MONUMENTO</a>  </div>
-							<div style="float:left; margin-left:20px;"> <a href="ver_definicoes.php?c=tombamento"class="btn btn-primary">TOMBAMENTO</a>  </div>
-							<div style="float:left; margin-left:20px;"> <a href="ver_definicoes.php?c=centro"class="btn btn-primary">CENTRO HISTÓRICO</a>  </div>
-
-						</td>
-
-					</tr>
-
-				</table>
-				<br>
-				<br>
-				<span class="filtrar">Precisamos conservar</span>
-
-				<table width="840px" border="0" >
-
-					<tr>
-
-					</thead>
-  <tr>
-      <!-- <th scope="row"></th>
-<td><font size="4"style="float:left; margin-left:300px;"><p align="justify" ><b>Conservação</b></br></br>
-O termo <b>conservação</b> se refere ao conjunto de ações possíveis para assegurar a manutenção do nosso patrimônio. De acordo com as circunstâncias, para se conservar é necessário fazer uma  restauração, o que requer um trabalho técnico mais especializado e caro. Mas a simples manutenção cotidiana pode garantir de forma eficaz a conservação, não permitindo que um edifício fique danificado. Dar um uso adequado, que respeite a integridade e significação cultural dos edifícios de valor patrimonial é mais um caminho para a boa conservação. <br><br>
-Medidas legais como o tombamento também são parte desse conjunto de ações, mas não necessariamente garante a conservação do patrimônio tombado, uma vez que tal legado precisa ser cuidado por seu(s) proprietário(s) a fim de manter sua integridade.  Nesse sentido, para diminuir essa lacuna entre tombar e conservar, os documentos patrimoniais obtidos a partir de fóruns pertinentes, foram indicando outros meios que estimulem a conservação, quais sejam incentivos fiscais, isenções de impostos, etc.<br><br>
- Portanto, conservar é cuidar, tratar com respeito os bens de valor patrimonial, para que estes permaneçam como registros da história e memória de uma cidade.
- <th scope="col"></th></font>
-	  </td>
-	  <td>
-	 
-	  <td style="float:left; margin-left:20px; margin-right: 0px; ">  <br>  <br> <br><img src="img/definicoes/conservacao1.jpg" />  </td>
-	  
-	   </td> -->
-	   <tr >
-
-						<td>
-
-						<div style="float:left; margin-left:350px;"><a href="ver_definicoes.php?c=conservacao"class="btn btn-primary">CONSERVAÇÃO</a> </div>
-						</td>
-
-					</tr>
-				</table>
-				<span class="filtrar">Para que?</span><br/><br/>
-
-<table width="1000px" border="0" >
-
-	<tr>
-		<td>
-
-		<div style="float:left; margin-left:200px;"><a href="ver_definicoes.php?c=historia"class="btn btn-primary">HISTÓRIA</a> </div>
-			<div style="float:left; margin-left:20px;"> <a href="ver_definicoes.php?c=memoria" class="btn btn-primary">MEMÓRIA</a>  </div>
-			<div style="float:left; margin-left:20px;"> <a href="ver_definicoes.php?c=identidade"class="btn btn-primary">IDENTIDADE</a>  </div>
-			<div style="float:left; margin-left:20px;"> <a href="ver_definicoes.php?c=cultura"class="btn btn-primary">CULTURA</a>  </div>
-
-		</td>
-
-	</tr>
-
-</table>
-			</td>
-		</tr>
-	</table>
+		</div>
+	</div>
 </div>
+
+
+
+
+
+
+
+
+</div>      
 
 
 
@@ -151,7 +177,6 @@ Medidas legais como o tombamento também são parte desse conjunto de ações, m
 
 include("footer.php");
 
-
-
 ?>
+
 
