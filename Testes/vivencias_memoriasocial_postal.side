@@ -1,0 +1,323 @@
+{
+  "id": "4d195cce-829f-4862-9373-abd721d44b3a",
+  "version": "2.0",
+  "name": "memoria jp",
+  "url": "http://localhost/memoriaj/index.php",
+  "tests": [{
+    "id": "88f57047-eca5-4266-b6b7-16d1b5332a25",
+    "name": "CT01_ver_video_vivencias",
+    "commands": [{
+      "id": "86b8b8a6-4100-4ad1-b01b-5d2103798bf9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriaj/index.php",
+      "targets": [],
+      "value": "Abre o site"
+    }, {
+      "id": "7b7f687f-4b08-4b34-99ba-6a644f59ae40",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": "Redimensiona a janela no teste"
+    }, {
+      "id": "c8ff3fe2-23cb-4b2c-a970-b1b23725dc65",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=VIVÊNCIAS",
+      "targets": [
+        ["linkText=VIVÊNCIAS", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'VIVÊNCIAS')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'vivencias.php')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'VIVÊNCIAS')]", "xpath:innerText"]
+      ],
+      "value": "Abre o a página de vivencias"
+    }, {
+      "id": "e131bd39-857f-47a9-83e8-dc9cdca7b6ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > img",
+      "targets": [
+        ["css=a:nth-child(1) > img", "css:finder"],
+        ["xpath=//td/div/a/img", "xpath:position"]
+      ],
+      "value": "Clique no vídeo selecionado"
+    }, {
+      "id": "1b23183e-8a5a-412d-927d-fdf61af07ea3",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": "Play no vídeo"
+    }, {
+      "id": "891f5af6-31f5-4c06-a0e4-926132c154b9",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": "Tempo de delay pra carregar e reproduzir"
+    }, {
+      "id": "7733971f-a62a-44d9-b73e-eed41bec2d47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[25]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": "Para o vídeo"
+    }, {
+      "id": "d44a85d8-6709-42aa-a8cc-f8114bbb124a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": "Área de fechar o player"
+    }, {
+      "id": "f059f1ec-caa6-4856-b144-3a30f78a625d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lity-close",
+      "targets": [
+        ["css=.lity-close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": "Fecha o player"
+    }]
+  }, {
+    "id": "384850b8-8087-4d7e-bb27-f95b7c007b9c",
+    "name": "CT02_ver_quadrinho_memoria_social",
+    "commands": [{
+      "id": "530121fb-4e85-499a-9ce7-3b22b3083d53",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriaj/index.php",
+      "targets": [],
+      "value": "Acessa o site"
+    }, {
+      "id": "e197c3cd-e44c-4333-ab02-eaf9c334cfc4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": "Redimensiona a janela"
+    }, {
+      "id": "840f55f7-0caf-4c46-8050-b50bb92e2acc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MEMÓRIA SOCIAL",
+      "targets": [
+        ["linkText=MEMÓRIA SOCIAL", "linkText"],
+        ["css=li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MEMÓRIA SOCIAL')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'memoria-social.php')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MEMÓRIA SOCIAL')]", "xpath:innerText"]
+      ],
+      "value": "Acessa a página de memoria social"
+    }, {
+      "id": "fcab4086-7b60-4223-b641-e2766d7242c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) img",
+      "targets": [
+        ["css=.item:nth-child(1) img", "css:finder"],
+        ["xpath=//td/div/a/img", "xpath:position"]
+      ],
+      "value": "Clique no quadrinho"
+    }, {
+      "id": "4d0b0bbb-381d-49ec-9229-134abe9d8d30",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": "Delay pra carregar o quadrinho"
+    }, {
+      "id": "994975e7-4905-4e44-a6a0-a2878c8425a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lity-close",
+      "targets": [
+        ["css=.lity-close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": "Fecha o quadrinho"
+    }]
+  }, {
+    "id": "398559e3-3992-4e22-8d2e-4d4285d212b7",
+    "name": "CT03_ver_video_memoria_social",
+    "commands": [{
+      "id": "9de91218-36c5-4eca-92cb-b043731d05be",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriaj/index.php",
+      "targets": [],
+      "value": "Abre o site"
+    }, {
+      "id": "66ac5012-97a9-45b2-89f0-b1de09535faf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": "Redimensiona a janela"
+    }, {
+      "id": "57205499-ac5a-4bc8-8613-f33386391f13",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MEMÓRIA SOCIAL",
+      "targets": [
+        ["linkText=MEMÓRIA SOCIAL", "linkText"],
+        ["css=li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MEMÓRIA SOCIAL')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'memoria-social.php')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MEMÓRIA SOCIAL')]", "xpath:innerText"]
+      ],
+      "value": "Acessa a página de memória social"
+    }, {
+      "id": "8a6e22bb-4370-413b-8f17-dd1fe552c439",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(2) img",
+      "targets": [
+        ["css=.item:nth-child(2) img", "css:finder"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": "Clique no vídeo selecionado"
+    }, {
+      "id": "c19f4c92-2e80-45e8-80ad-63e278dc5e72",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": "Play no vídeo"
+    }, {
+      "id": "feb75b31-5481-4bbe-a994-e830e3a2d30c",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": "Delay pra carregar e reproduzir"
+    }, {
+      "id": "a638cf07-9ec1-4e26-aecc-24b2c2c1a4b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[25]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": "Para o vídeo"
+    }, {
+      "id": "6a230262-119d-4d92-8d7c-077b4d321807",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": "Seleção pra fechar"
+    }, {
+      "id": "ce59a5f5-2851-46a5-b67e-e7d99ee38660",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lity-close",
+      "targets": [
+        ["css=.lity-close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": "Fecha o vídeo"
+    }]
+  }, {
+    "id": "40f75c67-cac8-461e-998a-b5ab90bcd45a",
+    "name": "CT04_ver_cartao_postal",
+    "commands": [{
+      "id": "3e258ea2-0fcb-470e-bcf9-d20e260d8580",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriaj/index.php",
+      "targets": [],
+      "value": "Acessa o site"
+    }, {
+      "id": "1fe20c26-5d61-4dfd-ab5c-a5473c01eba2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": "Redimensiona a janela"
+    }, {
+      "id": "a9fb65c6-5ec2-4456-be58-548b63e7e837",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=POSTAIS",
+      "targets": [
+        ["linkText=POSTAIS", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'POSTAIS')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'postais.php')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'POSTAIS')]", "xpath:innerText"]
+      ],
+      "value": "Acessa a página de postais"
+    }, {
+      "id": "18576ecd-31a9-45d3-80e6-eab22da4934c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) img",
+      "targets": [
+        ["css=.item:nth-child(1) img", "css:finder"],
+        ["xpath=//td/div/a/img", "xpath:position"]
+      ],
+      "value": "Clique no cartão postal"
+    }, {
+      "id": "54c8eb01-e1ca-4319-9e1f-cdcce5e68e09",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": "Delay pra carregar e abrir"
+    }, {
+      "id": "4dc6d871-cc11-41a3-85a2-1bd2fae2b646",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lity-close",
+      "targets": [
+        ["css=.lity-close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": "Fecha cartão postal"
+    }]
+  }],
+  "suites": [{
+    "id": "20ea1ee8-cc5d-4548-82dd-9372f89d321c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/", "http://localhost/memoriaj/index.php"],
+  "plugins": []
+}
