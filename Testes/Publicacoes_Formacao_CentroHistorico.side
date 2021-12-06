@@ -1,0 +1,210 @@
+{
+  "id": "6f4bf2a4-90ae-4b70-a830-3f4b72b43329",
+  "version": "2.0",
+  "name": "MemoriaJPA",
+  "url": "http://localhost/memoriajpa/memoriajpaSite/index.php",
+  "tests": [{
+    "id": "6fbbc0ff-edb2-4912-abad-c495a3155f44",
+    "name": "CT05_CentroHistorico",
+    "commands": [{
+      "id": "9e2eaef3-7758-469a-a3ca-7c41609dcdca",
+      "comment": "",
+      "command": "open",
+      "target": "/memoriajpa/memoriajpaSite/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16460cfb-c337-4cc3-89e0-ac989f6380c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bc196a8-ed6e-4ad1-8b3c-25282f5ef0fb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CENTRO HISTÓRICO",
+      "targets": [
+        ["linkText=CENTRO HISTÓRICO", "linkText"],
+        ["css=#nav > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CENTRO HISTÓRICO')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'centro-historico.php')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CENTRO HISTÓRICO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18c455e6-c9cb-42fa-a69c-d35ec26bf520",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > a:nth-child(1) > img",
+      "targets": [
+        ["css=div:nth-child(1) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=//td/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e65fdc33-57e1-4ff7-8c2a-58bedb57126e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick=\"window.location.href='/memoriajpa/memoriajpaSite/centro-historico.php'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6a4d856-49ca-4f09-b159-cdcfe7d2cd40",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) img",
+      "targets": [
+        ["css=div:nth-child(2) img", "css:finder"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ab5f439-ab4a-458d-a49f-2d0eb5d83993",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick=\"window.location.href='/memoriajpa/memoriajpaSite/centro-historico.php'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6ab409bf-2b78-45dd-be0e-e46c0ba48c83",
+    "name": "CT06_Publicacoes",
+    "commands": [{
+      "id": "b22979cf-88b9-4416-a7bd-c94ab0b4721f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriajpa/memoriajpaSite/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b333ef09-542f-49f9-9ab3-e0833f412189",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "496189bc-c85c-4c51-990c-4ba976e7c586",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Publicações",
+      "targets": [
+        ["linkText=Publicações", "linkText"],
+        ["css=.hi-icon-artigo", "css:finder"],
+        ["xpath=//a[contains(text(),'Publicações')]", "xpath:link"],
+        ["xpath=//div[@id='header']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'publicacoes.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Publicações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eeee842-296a-4e8f-ac4c-e2609b3c0cc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Publicações",
+      "targets": [
+        ["linkText=Publicações", "linkText"],
+        ["css=.hi-icon-artigo", "css:finder"],
+        ["xpath=//a[contains(text(),'Publicações')]", "xpath:link"],
+        ["xpath=//div[@id='header']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'publicacoes.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Publicações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d472485f-28b2-4f52-b4fe-147f90fd0254",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Publicações",
+      "targets": [
+        ["linkText=Publicações", "linkText"],
+        ["css=.hi-icon-artigo", "css:finder"],
+        ["xpath=//a[contains(text(),'Publicações')]", "xpath:link"],
+        ["xpath=//div[@id='header']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'publicacoes.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Publicações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dad3eb7-85ba-4502-ab93-828a8f481e59",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(1) img",
+      "targets": [
+        ["css=tr:nth-child(1) img", "css:finder"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87234b7b-65d6-47e9-9bc9-6ad8bc73af00",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) img",
+      "targets": [
+        ["css=tr:nth-child(1) img", "css:finder"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5ede957c-d442-4a1c-bf0a-e28ead124dde",
+    "name": "CT07_Formacao_e_Evolucao",
+    "commands": [{
+      "id": "e7bd3154-d19a-4c16-8c17-381a81dec0f4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriajpa/memoriajpaSite/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50ea4903-829a-4c95-af45-d3ca8f4f875d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e373f8c0-66c7-4a91-8a70-e11d36181e86",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=FORMAÇÃO E EVOLUÇÃO",
+      "targets": [
+        ["linkText=FORMAÇÃO E EVOLUÇÃO", "linkText"],
+        ["css=#nav > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'FORMAÇÃO E EVOLUÇÃO')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'formacao-e-evolucao.php')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'FORMAÇÃO E EVOLUÇÃO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fc29b7da-364c-453b-8888-89858dc43b43",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6fbbc0ff-edb2-4912-abad-c495a3155f44"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/memoriajpa/memoriajpaSite/index.php"],
+  "plugins": []
+}
