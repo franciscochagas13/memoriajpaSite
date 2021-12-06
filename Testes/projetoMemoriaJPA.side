@@ -1,0 +1,1021 @@
+{
+  "id": "32caf83a-d3d4-4d72-9038-994188dabd7a",
+  "version": "2.0",
+  "name": "projetoMemoriaJPA",
+  "url": "http://localhost/memoriaj",
+  "tests": [{
+    "id": "106b8048-ea7b-4660-b21f-236dbe590f04",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "b3f211c4-569e-4525-8a22-916ddef4f878",
+    "name": "jogo da memoria",
+    "commands": [{
+      "id": "c9af4673-c4bb-4f55-977a-ac5fb1c304b1",
+      "comment": "",
+      "command": "open",
+      "target": "/memoriaj/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7df9a876-1bd1-41f3-9724-27878a5e9797",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a9c324b-2556-4276-8795-07ef620b88d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=JOGOS",
+      "targets": [
+        ["linkText=JOGOS", "linkText"],
+        ["css=li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'JOGOS')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'jogos.php')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JOGOS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ecb0a97-20cd-4a31-a413-01e4e34f3435",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > a:nth-child(1) > img",
+      "targets": [
+        ["css=div:nth-child(1) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=//td/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29e7a091-bc34-45fd-bc15-3123b082e7d4",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f736cce-8c38-478a-bf79-bad7e43a837a",
+      "comment": "",
+      "command": "click",
+      "target": "id=facil",
+      "targets": [
+        ["id=facil", "id"],
+        ["css=#facil", "css:finder"],
+        ["xpath=//div[@id='facil']", "xpath:attributes"],
+        ["xpath=//div[@id='botoes']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b12fd16-4289-442a-b4f4-0cba396e9e43",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF2A",
+      "targets": [
+        ["id=CartaF2A", "id"],
+        ["css=#CartaF2A", "css:finder"],
+        ["xpath=//div[@id='CartaF2A']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1a08b61-c67e-4ae4-88ec-7f4aab8ce0bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF6B",
+      "targets": [
+        ["id=CartaF6B", "id"],
+        ["css=#CartaF6B", "css:finder"],
+        ["xpath=//div[@id='CartaF6B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bbe28ff-957c-467d-a1a9-d8752b98bf6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF2Atopo",
+      "targets": [
+        ["id=CartaF2Atopo", "id"],
+        ["css=#CartaF2Atopo", "css:finder"],
+        ["xpath=//img[@id='CartaF2Atopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF2A']/img[2]", "xpath:idRelative"],
+        ["xpath=//img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "531c9259-1d88-4a4d-8e3d-a210b02589fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF3A",
+      "targets": [
+        ["id=CartaF3A", "id"],
+        ["css=#CartaF3A", "css:finder"],
+        ["xpath=//div[@id='CartaF3A']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[13]", "xpath:idRelative"],
+        ["xpath=//div[13]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa20686e-cfcf-42e4-a412-2e63e4a422b4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=CartaF3A",
+      "targets": [
+        ["id=CartaF3A", "id"],
+        ["css=#CartaF3A", "css:finder"],
+        ["xpath=//div[@id='CartaF3A']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[13]", "xpath:idRelative"],
+        ["xpath=//div[13]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c6b9ae5-0f72-48b5-a16a-235d581019c6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=CartaF3A",
+      "targets": [
+        ["id=CartaF3A", "id"],
+        ["css=#CartaF3A", "css:finder"],
+        ["xpath=//div[@id='CartaF3A']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[13]", "xpath:idRelative"],
+        ["xpath=//div[13]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "578c3cbf-ea6e-4068-ab4f-548593b582fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF0B",
+      "targets": [
+        ["id=CartaF0B", "id"],
+        ["css=#CartaF0B", "css:finder"],
+        ["xpath=//div[@id='CartaF0B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[14]", "xpath:idRelative"],
+        ["xpath=//div[14]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0191ce8d-8977-487d-91a3-2d8172095cea",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=CartaF0B",
+      "targets": [
+        ["id=CartaF0B", "id"],
+        ["css=#CartaF0B", "css:finder"],
+        ["xpath=//div[@id='CartaF0B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[14]", "xpath:idRelative"],
+        ["xpath=//div[14]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15f5f352-f763-491c-8dd5-a0c8fa039de7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=CartaF0B",
+      "targets": [
+        ["id=CartaF0B", "id"],
+        ["css=#CartaF0B", "css:finder"],
+        ["xpath=//div[@id='CartaF0B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[14]", "xpath:idRelative"],
+        ["xpath=//div[14]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58bf8082-b179-47ea-8f07-2226b4dae015",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF2Atopo",
+      "targets": [
+        ["id=CartaF2Atopo", "id"],
+        ["css=#CartaF2Atopo", "css:finder"],
+        ["xpath=//img[@id='CartaF2Atopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF2A']/img[2]", "xpath:idRelative"],
+        ["xpath=//img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f1220c0-d3d6-4941-a45d-61fa75b6fc96",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF6A",
+      "targets": [
+        ["id=CartaF6A", "id"],
+        ["css=#CartaF6A", "css:finder"],
+        ["xpath=//div[@id='CartaF6A']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[15]", "xpath:idRelative"],
+        ["xpath=//div[15]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c9ec046-c833-4614-a58b-332123a8b705",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF2Atopo",
+      "targets": [
+        ["id=CartaF2Atopo", "id"],
+        ["css=#CartaF2Atopo", "css:finder"],
+        ["xpath=//img[@id='CartaF2Atopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF2A']/img[2]", "xpath:idRelative"],
+        ["xpath=//img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d469aaf5-9455-4b20-a531-9657c4aaccd8",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF1A",
+      "targets": [
+        ["id=CartaF1A", "id"],
+        ["css=#CartaF1A", "css:finder"],
+        ["xpath=//div[@id='CartaF1A']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[16]", "xpath:idRelative"],
+        ["xpath=//div[16]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aaa3832-8381-40f3-94aa-8063a65e2f52",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF3B",
+      "targets": [
+        ["id=CartaF3B", "id"],
+        ["css=#CartaF3B", "css:finder"],
+        ["xpath=//div[@id='CartaF3B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8a9362d-7410-4838-b88d-a5d8045658d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF4B",
+      "targets": [
+        ["id=CartaF4B", "id"],
+        ["css=#CartaF4B", "css:finder"],
+        ["xpath=//div[@id='CartaF4B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[12]", "xpath:idRelative"],
+        ["xpath=//div[12]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59673442-3253-4143-9be2-b72c9202e121",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=CartaF4B",
+      "targets": [
+        ["id=CartaF4B", "id"],
+        ["css=#CartaF4B", "css:finder"],
+        ["xpath=//div[@id='CartaF4B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[12]", "xpath:idRelative"],
+        ["xpath=//div[12]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8515ba1-eada-485a-a285-c7e8e24f8db7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=CartaF4B",
+      "targets": [
+        ["id=CartaF4B", "id"],
+        ["css=#CartaF4B", "css:finder"],
+        ["xpath=//div[@id='CartaF4B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[12]", "xpath:idRelative"],
+        ["xpath=//div[12]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a108b978-7476-4089-a714-43331b36cdc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF3Btopo",
+      "targets": [
+        ["id=CartaF3Btopo", "id"],
+        ["css=#CartaF3Btopo", "css:finder"],
+        ["xpath=//img[@id='CartaF3Btopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF3B']/img[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5707ebd2-f810-4423-b1f5-ba5f56700341",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF2B",
+      "targets": [
+        ["id=CartaF2B", "id"],
+        ["css=#CartaF2B", "css:finder"],
+        ["xpath=//div[@id='CartaF2B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[8]", "xpath:idRelative"],
+        ["xpath=//div[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7cc5395-04c2-439f-84dd-d9d2b12ac34d",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF3Btopo",
+      "targets": [
+        ["id=CartaF3Btopo", "id"],
+        ["css=#CartaF3Btopo", "css:finder"],
+        ["xpath=//img[@id='CartaF3Btopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF3B']/img[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65603538-55b5-4b69-afeb-ef7205701c6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF0A",
+      "targets": [
+        ["id=CartaF0A", "id"],
+        ["css=#CartaF0A", "css:finder"],
+        ["xpath=//div[@id='CartaF0A']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c11ceb34-7000-487c-aec0-14dec76fab39",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF3Btopo",
+      "targets": [
+        ["id=CartaF3Btopo", "id"],
+        ["css=#CartaF3Btopo", "css:finder"],
+        ["xpath=//img[@id='CartaF3Btopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF3B']/img[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f4f063d-6c73-4175-91b4-18ea88abb5cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF5A",
+      "targets": [
+        ["id=CartaF5A", "id"],
+        ["css=#CartaF5A", "css:finder"],
+        ["xpath=//div[@id='CartaF5A']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80ee369e-c92b-4d7b-a076-2f8d1f14e51a",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF7B",
+      "targets": [
+        ["id=CartaF7B", "id"],
+        ["css=#CartaF7B", "css:finder"],
+        ["xpath=//div[@id='CartaF7B']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[7]", "xpath:idRelative"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9632e6c-1609-4afc-b518-5cc8cb792c3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF5Atopo",
+      "targets": [
+        ["id=CartaF5Atopo", "id"],
+        ["css=#CartaF5Atopo", "css:finder"],
+        ["xpath=//img[@id='CartaF5Atopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF5A']/img[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c188a2e-d3a3-42ba-a3fb-549ad8c99517",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF3Atopo",
+      "targets": [
+        ["id=CartaF3Atopo", "id"],
+        ["css=#CartaF3Atopo", "css:finder"],
+        ["xpath=//img[@id='CartaF3Atopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF3A']/img[2]", "xpath:idRelative"],
+        ["xpath=//div[13]/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5335ff06-d0fd-43bf-8daf-a2ff976c61e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF0Btopo",
+      "targets": [
+        ["id=CartaF0Btopo", "id"],
+        ["css=#CartaF0Btopo", "css:finder"],
+        ["xpath=//img[@id='CartaF0Btopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF0B']/img[2]", "xpath:idRelative"],
+        ["xpath=//div[14]/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec3c6a6e-c576-480f-b577-2b47cb89e47e",
+      "comment": "",
+      "command": "click",
+      "target": "id=CartaF0Atopo",
+      "targets": [
+        ["id=CartaF0Atopo", "id"],
+        ["css=#CartaF0Atopo", "css:finder"],
+        ["xpath=//img[@id='CartaF0Atopo']", "xpath:attributes"],
+        ["xpath=//div[@id='CartaF0A']/img[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "eb65c0c8-f656-4122-b65d-b5aa70e88e07",
+    "name": "jogo dos 7 erros",
+    "commands": [{
+      "id": "a6beded1-2f28-4302-9ef1-0fd05ac0bfef",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriaj/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bea5ebc9-db3c-4661-8a55-f280b7e18390",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c91e240f-08aa-4b58-86a9-dedbadcbe771",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=JOGOS",
+      "targets": [
+        ["linkText=JOGOS", "linkText"],
+        ["css=li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'JOGOS')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'jogos.php')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JOGOS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54fa237e-9e5a-49ff-8bb5-383d881537c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) img",
+      "targets": [
+        ["css=div:nth-child(2) img", "css:finder"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "894d0dbb-3c1a-4d01-8534-086f06da7626",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "761b5ff0-6b8f-43fd-94c7-d353f948b358",
+      "comment": "",
+      "command": "click",
+      "target": "id=jogo0",
+      "targets": [
+        ["id=jogo0", "id"],
+        ["css=#miniaturas > #jogo0", "css:finder"],
+        ["xpath=//div[@id='jogo0']", "xpath:attributes"],
+        ["xpath=//div[@id='miniaturas']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cc39260-31ea-4d76-8f27-fd1fc94cc07e",
+      "comment": "",
+      "command": "click",
+      "target": "id=certo",
+      "targets": [
+        ["id=certo", "id"],
+        ["css=#certo", "css:finder"],
+        ["xpath=//div[@id='certo']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccfb48be-5930-4098-94f9-0c990ad9bebc",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f713a63-0bf9-4829-9d76-43df652630fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d91753a-31be-4aec-ab10-0356f9712d00",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47c84e05-ab92-467f-a7a5-b1a6eebe6c29",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65049b16-ddc6-4a6d-819f-3fdc75c4a4d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=erro3",
+      "targets": [
+        ["id=erro3", "id"],
+        ["css=#erro3", "css:finder"],
+        ["xpath=//div[@id='erro3']", "xpath:attributes"],
+        ["xpath=//div[@id='errado']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83e5497c-f764-4ea4-af10-053f9a7715c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dc9e1e7-d976-47cb-a5c4-a7318b5443f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=erro1",
+      "targets": [
+        ["id=erro1", "id"],
+        ["css=#erro1", "css:finder"],
+        ["xpath=//div[@id='erro1']", "xpath:attributes"],
+        ["xpath=//div[@id='errado']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "508d9a67-9027-441d-a53b-addff8cdd7c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=erro0",
+      "targets": [
+        ["id=erro0", "id"],
+        ["css=#erro0", "css:finder"],
+        ["xpath=//div[@id='erro0']", "xpath:attributes"],
+        ["xpath=//div[@id='errado']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bebd1d01-1908-4723-932a-132b6b6dfcb6",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8ef5817-4183-429f-a71d-affd1b7ad2dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "901bd553-5e17-46d4-a73b-80491ae09cd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50225755-ddcb-47a1-89e8-4fd80e940a6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45dfaae6-86c7-454a-a821-778d7fa06611",
+      "comment": "",
+      "command": "click",
+      "target": "id=erro2",
+      "targets": [
+        ["id=erro2", "id"],
+        ["css=#erro2", "css:finder"],
+        ["xpath=//div[@id='erro2']", "xpath:attributes"],
+        ["xpath=//div[@id='errado']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ed7b235-3bd5-4e61-9cb4-954cb3a51dc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=erro2",
+      "targets": [
+        ["id=erro2", "id"],
+        ["css=#erro2", "css:finder"],
+        ["xpath=//div[@id='erro2']", "xpath:attributes"],
+        ["xpath=//div[@id='errado']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc3b6c25-c203-4e3f-b79f-2a8343b8b37a",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dda4cef-42b4-459a-ad32-a893fddef5e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=errado",
+      "targets": [
+        ["id=errado", "id"],
+        ["css=#errado", "css:finder"],
+        ["xpath=//div[@id='errado']", "xpath:attributes"],
+        ["xpath=//div[@id='jogo']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cedf8196-45e8-436a-9250-e929e949e9bc",
+    "name": "jogo paper toy",
+    "commands": [{
+      "id": "b5f843ab-f4b4-4c18-9a96-bcccb325d447",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriaj/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "389b0969-c5ed-4edb-9e84-831479e1181f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23d8e2e3-9d0f-4616-8930-ce3a4c30ccf8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=JOGOS",
+      "targets": [
+        ["linkText=JOGOS", "linkText"],
+        ["css=li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'JOGOS')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'jogos.php')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JOGOS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dee66a1-0315-4922-b286-d3cdde83ea85",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(4) img",
+      "targets": [
+        ["css=div:nth-child(4) img", "css:finder"],
+        ["xpath=//div[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "631be0d0-151b-4e9e-96ea-20683b1e2af6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) img",
+      "targets": [
+        ["css=.item:nth-child(1) img", "css:finder"],
+        ["xpath=//td/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8aec39c-b48d-46a8-8986-4ca80e0656ef",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,700)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "eafebd2b-c48a-420e-ba36-056f97888725",
+    "name": "jogo colorir",
+    "commands": [{
+      "id": "decd13c2-e5f5-4a06-b14e-78ba23c48853",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriaj/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "625d8101-c893-4332-ae82-03c0c20a408a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15b6b2bf-31c7-45c0-968b-75ecda837d06",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=JOGOS",
+      "targets": [
+        ["linkText=JOGOS", "linkText"],
+        ["css=li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'JOGOS')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'jogos.php')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JOGOS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78ffb1de-de17-4542-a550-0d40f6b50b53",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(3) img",
+      "targets": [
+        ["css=div:nth-child(3) img", "css:finder"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "473ec283-7f66-4654-a736-d812480cf798",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) img",
+      "targets": [
+        ["css=.item:nth-child(1) img", "css:finder"],
+        ["xpath=//td/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d53376ef-e1c1-4f28-88f0-db83d67be686",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lity-close",
+      "targets": [
+        ["css=.lity-close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "92850061-70e9-4e3d-b0e9-de3bf2aac787",
+    "name": "quem somos",
+    "commands": [{
+      "id": "d8473342-7e4b-4ec0-99ca-857b82f23423",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriaj/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ba2a8dc-c176-4dfa-bf24-34f58dc7e08b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75cf34d2-ad3c-478e-8e81-a535c6316f1b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Quem Somos",
+      "targets": [
+        ["linkText=Quem Somos", "linkText"],
+        ["css=.hi-icon-earth", "css:finder"],
+        ["xpath=//a[contains(text(),'Quem Somos')]", "xpath:link"],
+        ["xpath=//div[@id='header']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'quemsomos.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Quem Somos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2aebf4f-f6b7-44d2-9aef-16b7ea6a8c2a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.caixaFoto:nth-child(1) img",
+      "targets": [
+        ["css=.caixaFoto:nth-child(1) img", "css:finder"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "043abae1-a62b-49b8-8158-47710d6efeb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.caixaFoto:nth-child(1) img",
+      "targets": [
+        ["css=.caixaFoto:nth-child(1) img", "css:finder"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3fc3359-9411-4e73-ba93-859fa1784a73",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.caixaFoto:nth-child(1) img",
+      "targets": [
+        ["css=.caixaFoto:nth-child(1) img", "css:finder"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7ddb6399-72fa-4c54-bae0-414693808ab5",
+    "name": "concursos",
+    "commands": [{
+      "id": "89a6614d-bda4-42be-9982-196c9dddb931",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/memoriaj/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32c042a3-5c78-45a1-a6f9-7e21aff289ef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1f95880-591d-450a-9584-847bfb0515e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CONCURSOS",
+      "targets": [
+        ["linkText=CONCURSOS", "linkText"],
+        ["css=li:nth-child(11) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CONCURSOS')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[11]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'concurso.php')]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CONCURSOS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fc3af59-f293-47cd-b1d3-8ac3e0a82333",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(6) img",
+      "targets": [
+        ["css=div:nth-child(6) img", "css:finder"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2b26fcc-e5d6-42d7-966d-12cfc1f63922",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "20964dab-2564-441e-a51e-f1b67953527b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ird3-button-next .navigation-arrow__shadow",
+      "targets": [
+        ["css=#ird3-button-next .navigation-arrow__shadow", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b147e0f0-58c1-4515-97fa-de67ef25fb9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ird3-button-next .navigation-arrow__shadow",
+      "targets": [
+        ["css=#ird3-button-next .navigation-arrow__shadow", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6122e6a1-3f54-41d1-aace-5afd093cec8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ird3-button-next .navigation-arrow__shadow",
+      "targets": [
+        ["css=#ird3-button-next .navigation-arrow__shadow", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e50a9b08-95dc-4e46-9a54-ec9f4b66fdcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ird3-button-next .navigation-arrow__shadow",
+      "targets": [
+        ["css=#ird3-button-next .navigation-arrow__shadow", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a5c425c-3366-4255-9742-c278ef1893dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ird3-button-next .navigation-arrow__shadow",
+      "targets": [
+        ["css=#ird3-button-next .navigation-arrow__shadow", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1dc0f56c-4418-484f-8d29-0f4f3d19f01c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["106b8048-ea7b-4660-b21f-236dbe590f04"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/memoriaj"],
+  "plugins": []
+}
